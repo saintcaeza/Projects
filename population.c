@@ -9,7 +9,7 @@ int main(void) {
     goal = get_long("How many llamas do you want to get? ");
 
     //add and subtract every 'year; until we reach the goal number of llamas
-    
+     
 
     //print the goal number of years it took to reach the goal number of llamas
 

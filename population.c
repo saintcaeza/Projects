@@ -20,6 +20,6 @@ do {
 while (n < goal);
 
     //print the goal number of years it took to reach the goal number of llamas
-printf("It took %l years to reach %l number of llamas." year, goal);
+printf("It took %l years to reach %l number of llamas."year,goal);
 
 }

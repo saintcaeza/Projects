@@ -9,6 +9,8 @@ int main(void) {
     long goal = get_long("How many llamas do you want to get? ");
 
     //add and subtract every 'year; until we reach the goal number of llamas
+    long year = 1;
+
     for( n < goal, year ++) {
         n = n + ( n / 3);
         n = n - (n / 3);

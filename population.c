@@ -11,9 +11,9 @@ int main(void) {
         //add and subtract every 'year' until we reach the goal number of llamas
     long year = 1;
 
-    `  do {
+     do {
         n = n + ( n / 3);
-        n = n - (n / 3);
+        n = n - (n / 4);
         return n;
         year++;
      }

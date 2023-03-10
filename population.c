@@ -12,8 +12,7 @@ int main(void) {
     long year = 1;
 
      do {
-        n = n + ( n / 3);
-        n = n - (n / 4);
+        n = n + ( n / 3) - (n / 4);
         return n;
         year++;
      }

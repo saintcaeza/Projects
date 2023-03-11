@@ -26,8 +26,7 @@ int main(void)
         start += start / 3;
         start -= start / 4;
         years ++;
-
-        break
+        break;
     }
 
     // TODO: Print number of years

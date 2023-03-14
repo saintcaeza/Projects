@@ -32,7 +32,7 @@ bool prime(int number)
 {
     // TODO
     //except 1
-    if (number == 1)
+    if (number < 2)
     {
         return false;
     }

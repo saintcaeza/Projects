@@ -28,6 +28,7 @@ int main(void)
     }
 }
 
+// Checks the range of values 'i' for prime numbers
 bool prime(int number)
 {
     // TODO
@@ -36,11 +37,11 @@ bool prime(int number)
     {
         return false;
     }
-    //check if they are prime numbers or not
+
     else if (number % 2 != 0)
     {
         return true;
     }
     //a for loop to check through the numbers if they are prime
-    
+
 }

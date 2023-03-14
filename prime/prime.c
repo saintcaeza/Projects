@@ -31,11 +31,15 @@ int main(void)
 bool prime(int number)
 {
     // TODO
-    //Go through the range of values and check if they are prime numbers or not
-    if (number % 2 != 0)
+    //except 1
+    if (number == 1)
     {
-        //if prime return true
-        return true;
+        return false;
+    }
+    //check if they are prime numbers or not
+    elif (number % 2 != 0)
+    {
+        return true
     }
     else
     {

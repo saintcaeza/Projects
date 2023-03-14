@@ -42,8 +42,5 @@ bool prime(int number)
         return true;
     }
     //a for loop to check through the numbers if they are prime
-    else
-    {
-        
-    }
+    
 }

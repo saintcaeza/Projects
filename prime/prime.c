@@ -37,9 +37,9 @@ bool prime(int number)
         return false;
     }
     //check if they are prime numbers or not
-    elif (number % 2 != 0)
+    else if (number % 2 != 0)
     {
-        return true
+        return true;
     }
     else
     {

@@ -32,15 +32,14 @@ bool prime(int number)
 {
     // TODO
     //Go through the range of values and check if they are prime numbers or not
-    if (number % 2 == 0)
+    if (number % 2 == 1)
     {
         //if prime return true
         return true;
-
     }
     else
     {
-        //if not prime return false
+        //if not prime return false DON'T DO ANYTHING
         return false;
     }
 }

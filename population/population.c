@@ -7,26 +7,26 @@ int main(void)
     int start;
     do
     {
-        start = get_int ("start size: ");
+        start = get_int("What is the number of llamas you presently have? ");
     }
-    while(start < 9);
+    while (start < 9);
 
     // TODO: Prompt for end size
     int end;
     do
     {
-        end = get_int("end size: ");
+        end = get_int("How many llamas do you wish to have? ");
     }
-    while(end < start);
+    while (end < start);
 
     // TODO: Calculate number of years until we reach threshold
 
     int years = 0;
 
-    while(start < end)
+    while (start < end)
     {
-        start = start + start / 3 - start / 4;
+        start = start + (start / 3) - (start / 4);
         years ++;
     }
-    printf("The number is %i\n", years);
+    printf("Years: %i\n", years);
 }

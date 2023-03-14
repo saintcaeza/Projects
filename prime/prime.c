@@ -31,5 +31,9 @@ int main(void)
 bool prime(int number)
 {
     // TODO
+    //Go through the range of values and check if they are prime numbers or not
+    if (
+        //divide 'i' 
+    )
     return false;
 }

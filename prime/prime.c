@@ -32,9 +32,15 @@ bool prime(int number)
 {
     // TODO
     //Go through the range of values and check if they are prime numbers or not
-    if (
-        //divide 'i'
-        6n + 1 or 6n – 1
-    )
-    return false;
+    if (number % 2 )
+    {
+        //if prime return true
+        return true;
+
+    }
+    else
+    {
+        //if not prime return false
+        return false;
+    }
 }

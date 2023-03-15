@@ -28,20 +28,35 @@ int main(void)
     }
 }
 
-// Checks the range of values 'i' for prime numbers
+//Checks the range of values 'number' for what is not a prime numbers, with 2, 3, 5 and 7 as exceptions
 bool prime(int number)
 {
-    // TODO
-    //except 1
     if (number < 2)
     {
         return false;
     }
-
-    else if (number % 2 != 0)
+    else if (number == 2 || number == 3 || number == 5 || number == 7)
     {
         return true;
     }
-    //a for loop to check through the numbers if they are prime
-
+    else if (number % 2 == 0)
+    {
+        return false;
+    }
+    else if (number % 3 == 0)
+    {
+        return false;
+    }
+    else if (number % 5 == 0)
+    {
+        return false;
+    }
+    else if (number % 7 == 0)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 }

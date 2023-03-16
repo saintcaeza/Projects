@@ -20,6 +20,7 @@ int main(void)
             printf("#");
         }
         printf("\n");
+    }
 }
 
  //Create a left-aligned pyramid using height

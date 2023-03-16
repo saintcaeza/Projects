@@ -11,7 +11,6 @@ int main(void)
         height = get_int("Height: ");
     }
     while (height < 1 || height > 8);
-    printf("stored: %i\n", height);
 
     //Format and print both adjacent pyramid's according to size, width, space
     int width = 1;
@@ -19,14 +18,14 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
-         for (int k = 0; k < space; k++)
+         for (int j = 0; j < space; j++)
         {
             printf(" ");
-            for (int j = 0; j < width; j++ )
-            {
-                printf("#");
-            }
-            for (int l = 0; l < 1; l++)
+        }
+        for (int k = 0; k < width; k++)
+        {
+             printf("#");
+             for (int l = 0; l < 1; l++)
             {
                 printf(" ");
             }

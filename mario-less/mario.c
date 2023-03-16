@@ -9,8 +9,7 @@ int main(void)
     {
         height = get_int("How tall should the pyramid be? ");
     }
-    while (height > 0 && height > 8);
-
+    while (height < 0 || height > 8);
     printf("stored: %i\n", height);
 }
     /*

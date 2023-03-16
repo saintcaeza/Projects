@@ -26,5 +26,5 @@ int pyramid(int height)
         }
         printf("\n");
     }
-    
+
 }

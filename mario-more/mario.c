@@ -18,4 +18,8 @@ int main(void)
     int space = height - 1;
 
     for (int i = 0; i  < height; i++)
+    {
+        for ()
+        printf("/n");
+    }
 }

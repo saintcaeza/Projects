@@ -20,14 +20,14 @@ int main(void)
     {
          for (int j = 0; j < space; j++)
         {
-            printf("  ");
+            printf(" ");
         }
         for (int k = 0; k < width; k++)
         {
              printf("#");
         }
 
-        printf(" ");
+        printf("  ");
 
         for (int l = 0; l < width; l++)
         {

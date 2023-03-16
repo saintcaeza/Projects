@@ -25,5 +25,4 @@ int pyramid(int height)
         }
         printf("\n");
     }
-    return height;
 }

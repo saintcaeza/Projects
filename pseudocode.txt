@@ -2,5 +2,11 @@ Psuedocode to make the mario program
 
 1 accept a range of value 1 and 8, inclusive
 
-prompt user for height 
+1 prompt user for height
+
+2 if height is less than 1 or greater than 8 go back one stage
+
+3 
+
+
 

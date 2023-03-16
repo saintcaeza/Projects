@@ -25,10 +25,10 @@ int main(void)
             for (int j = 0; j < width; j++ )
             {
                 printf("#");
-                for (int l = 0; l < 1; l++)
-                {
-                    printf(" ");
-                }
+            }
+            for (int l = 0; l < 1; l++)
+            {
+                printf(" ");
             }
         }
 

@@ -17,10 +17,10 @@ int main(void)
 //Create a left-aligned pyramid using height
 int pyramid(void)
 {
-    int height;
-    for (int i = 0; i < height; i++)
+    int n = height;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < height; j++)
+        for (int j = 0; j < n; j++)
         {
             printf("#");
         }

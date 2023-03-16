@@ -12,9 +12,12 @@ int main(void)
         height = get_int("How tall should the pyramid be? ");
     }
     while (height < 0 || height > 8);
+}
 
-    int n = 1;
-     for (int i = 0; i < height; i++)
+//Create a left-aligned pyramid using height
+int pyramid(int height)
+{
+    for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < height; j++)
         {
@@ -23,9 +26,3 @@ int main(void)
         printf("\n");
     }
 }
-
- //Create a left-aligned pyramid using height
-/*nt pyramid(int height)
-{
-    }
-}*/

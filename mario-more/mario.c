@@ -18,24 +18,24 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
-         for (int j = 0; j < space; j++)
+        for (int j = 0; j < space; j++)
         {
             printf(" ");
         }
         for (int k = 0; k < width; k++)
         {
-             printf("#");
+            printf("#");
         }
 
+        //Gives double space and creates an adjacent pyramid
         printf("  ");
 
         for (int l = 0; l < width; l++)
         {
-             printf("#");
+            printf("#");
         }
         width ++;
         space --;
         printf("\n");
     }
 }
-

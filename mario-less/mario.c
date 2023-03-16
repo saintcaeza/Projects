@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int pyramid(int height);
+int pyramid(void);
 
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 }
 
 //Create a left-aligned pyramid using height
-int pyramid(height)
+int pyramid(void)
 {
     for (int i = 0; i < height; i++)
     {

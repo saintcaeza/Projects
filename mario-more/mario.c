@@ -27,9 +27,14 @@ int main(void)
              printf("#");
         }
 
+        printf(" ");
+
+        for (int l = 0; l < width; l++)
+        {
+             printf("#");
+        }
         width ++;
         space --;
-        printf(" ");
         printf("\n");
     }
 }

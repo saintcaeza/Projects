@@ -25,14 +25,11 @@ int main(void)
         for (int k = 0; k < width; k++)
         {
              printf("#");
-             for (int l = 0; l < 1; l++)
-            {
-                printf(" ");
-            }
         }
 
         width ++;
         space --;
+        printf(" ");
         printf("\n");
     }
 }

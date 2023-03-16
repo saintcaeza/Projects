@@ -1,12 +1,11 @@
 Psuedocode to make the mario program
 
-1 accept a range of value 1 and 8, inclusive
-
 1 prompt user for height
 
-2 if height is less than 1 or greater than 8 go back one stage
+2 if height is less than 1 or greater than 8 (or not an integer at all) go back one stage
 
-3 
+3 iterate from i through height
+    a on iteration i, print i hashes and then new line.
 
 
 

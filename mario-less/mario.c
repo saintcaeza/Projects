@@ -13,13 +13,16 @@ int main(void)
     }
     while (height < 0 || height > 8);
 
+    int width = 1;
+
 //Create a left-aligned pyramid using height
     for (int i = 0; i < height; i++)
     {
-        for (int j = 0; j < height; j++)
+        for (int j = 0; j < width; j++)
         {
             printf("#");
         }
+        width++;
         printf("\n");
     }
 }

@@ -14,5 +14,6 @@ int main(void)
     printf("stored: %i\n", height);
 
     //Format and print both adjacent pyramid's according to size, width, space
-    
+    int width = 1;
+    int space = height - 1;
 }

@@ -11,7 +11,7 @@ int main(void)
     {
         height = get_int("How tall should the pyramid be? ");
     }
-    while (height < 0 || height > 8);
+    while (height < 1 || height > 8);
 
     int width = 1;
     int space = height -1;

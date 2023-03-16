@@ -22,7 +22,7 @@ int main(void)
         {
             printf(".");
         }
-        for (int k = 0; k < width; j++)
+        for (int k = 0; k < width; k++)
         {
             printf("#");
         }

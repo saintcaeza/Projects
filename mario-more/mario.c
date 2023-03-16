@@ -25,7 +25,7 @@ int main(void)
             for (int j = 0; j < width; j++ )
             {
                 printf("#");
-                for (int k = 0; k < 1; k++)
+                for (int l = 0; l < 1; l++)
                 {
                     printf(" ");
                 }

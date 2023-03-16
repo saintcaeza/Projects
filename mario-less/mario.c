@@ -1,3 +1,4 @@
+//Create a left-aligned pyramid using height
 #include <cs50.h>
 #include <stdio.h>
 
@@ -13,10 +14,11 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
+//determine's the width and spacing for the pyramid
     int width = 1;
-    int space = height -1;
+    int space = height - 1;
 
-//Create a left-aligned pyramid using height
+//Sets the height, width and spacing of the pyramd
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < space; j++)

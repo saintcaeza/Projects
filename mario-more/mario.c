@@ -17,5 +17,5 @@ int main(void)
     int width = 1;
     int space = height - 1;
 
-    for (int i = 0; )
+    for (int i = 0; i  < height; i++)
 }

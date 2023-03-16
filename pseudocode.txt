@@ -1,0 +1,4 @@
+Psuedocode to make the mario program
+
+1 accept a range of value 1 and 8, inclusive
+

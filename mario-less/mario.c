@@ -6,7 +6,7 @@ int pyramid(void);
 
 int main(void)
 {
-    //ask user for a positive integer 'height' of the pyramid
+    //Ask user for a positive integer 'height' of the pyramid
     int height;
     do
     {
@@ -14,11 +14,11 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-//determine's the width and spacing for the pyramid
+    //Determine's the width and spacing for the pyramid
     int width = 1;
     int space = height - 1;
 
-//Sets the height, width and spacing of the pyramd
+    //Formats the height, width and spacing of the pyramd
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < space; j++)

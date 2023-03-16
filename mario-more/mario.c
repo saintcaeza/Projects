@@ -22,10 +22,10 @@ int main(void)
          for (int k = 0; k < space; k++)
         {
             printf(" ");
-        }
-        for (int j = 0; j < width; j++ )
-        {
-            printf("#");
+            for (int j = 0; j < width; j++ )
+            {
+                printf("#");
+            }
         }
 
         width ++;

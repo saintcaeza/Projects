@@ -16,13 +16,9 @@ int main(void)
     int n = 1;
      for (int i = 0; i < height; i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < height; j++)
         {
             printf("#");
-            if (n < height)
-            {
-                n++;
-            }
         }
         printf("\n");
     }

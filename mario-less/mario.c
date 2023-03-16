@@ -4,12 +4,13 @@
 int main(void)
 {
     //ask user for a positive integer 'height' of the pyramid
-    int height = 0;
+    int height;
     do
     {
         height = get_int("How tall should the pyramid be? ");
     }
-    while (height >= 0 && height < 9);
+    while (height < 9);
+    
     printf("stored: %i\n", height);
 }
     /*

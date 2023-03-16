@@ -28,7 +28,8 @@ int main(void)
             printf(" ");
         }
 
-        width ++
-        printf("/n");
+        width ++;
+        space --;
+        printf("\n");
     }
 }

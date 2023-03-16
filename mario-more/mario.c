@@ -19,13 +19,13 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
+         for (int k = 0; k < space; k++)
+        {
+            printf(" ");
+        }
         for (int j = 0; j < width; j++ )
         {
             printf("#");
-        }
-        for (int k = 0; k < space; k++)
-        {
-            printf(" ");
         }
 
         width ++;

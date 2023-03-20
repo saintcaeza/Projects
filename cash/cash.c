@@ -35,6 +35,7 @@ int main(void)
     printf("%i\n", coins);
 }
 
+//Creates an integer variable 'ammount' and accepts inputs greater than 0
 int get_cents(void)
 {
     int ammount;
@@ -42,10 +43,11 @@ int get_cents(void)
     {
         ammount = get_int("How many cents are you owed? ");
     }
-    while(ammount < 0);
+    while (ammount < 0);
     return ammount;
 }
 
+//For loop counts how many set's of "25" exists in 'cents' and increases quarters by 1 for each set
 int calculate_quarters(int cents)
 {
     int quarters = 0;
@@ -59,7 +61,7 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     int dime = 0;
-    for (int i = 9; i < cents; i+= 10)
+    for (int i = 9; i < cents; i += 10)
     {
         dime ++;
     }
@@ -69,7 +71,7 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     int nickels = 0;
-    for (int i = 4; i < cents; i+= 5)
+    for (int i = 4; i < cents; i += 5)
     {
         nickels ++;
     }

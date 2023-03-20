@@ -1,4 +1,4 @@
-#include <cs50.h>
+\q  Q   aAQ\#include <cs50.h>
 #include <stdio.h>
 
 int get_cents(void);

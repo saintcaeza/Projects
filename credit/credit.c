@@ -19,7 +19,8 @@ int main(void)
     for(long i = 100; i < number; i += 100)
     {
         checksum = number % i;
-    }
+        return checksum;
+    
  printf("checksum: %li\n", checksum);
         //Add those products' digits together
 

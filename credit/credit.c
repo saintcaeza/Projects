@@ -21,6 +21,7 @@ int main(void)
     //check for the last digits using modulo
     for(int i = 100, i < number; i += 100){
         checksum = number % i;
+        if(checksum )
     }
     checksum /= 10;
 

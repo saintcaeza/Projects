@@ -20,9 +20,10 @@ int main(void)
     {
         digit = number % i;
 
-        //Makes sure whatever is multiplied is a single digit
+        //Multiplies every other digit by 2, starting with second-to-last digit
         if(digit > 9)
         {
+            //Makes sure whatever is multiplied is a single digit
             for(j = 10; j < digit; j *= 10);
             {
                 digit = digit / j;

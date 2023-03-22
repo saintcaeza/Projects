@@ -24,7 +24,7 @@ int main(void)
         if(digit > 9)
         {
             //Makes sure whatever is multiplied is a single digit
-            for(j = 10; j < digit; j *= 10);
+            for(long j = 10; j < digit; j *= 10);
             {
                 digit = digit / j;
                 return digit;
@@ -35,8 +35,9 @@ int main(void)
             sum = sum + (digit * 2);
             return sum;
         }
-    }
         printf("sum: %li\n", sum);
+
+    }
 
 }
              //Add those products' digits together

@@ -20,22 +20,26 @@ int main(void)
     {
         digit = number % i;
 
-        //Makes sure whatever is added to the sum is a single digit
-        for(j = 10; j < digit; j *= 10);
+        //Makes sure whatever is multiplied is a single digit
+        if(digit > 9)
         {
-            digit = digit / j;
-            return digit;
+            for(j = 10; j < digit; j *= 10);
+            {
+                digit = digit / j;
+                return digit;
+            }
         }
-
-        sum = digit * 2
-        return sum;
+        else
+        {
+            sum = digit * 2
+            return sum;
+        }
     }
         printf("sum: %li\n", sum);
 
 }
              //Add those products' digits together
 
-    //multiply every other digit by 2, starting with second-to-last digit
 
         //add the some to the sum of the digits that weren't multiplied by 2
 

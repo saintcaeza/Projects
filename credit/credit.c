@@ -27,9 +27,8 @@ int main(void)
             return digit;
         }
 
-        {
-            sum += digit;
-            return sum;
+        digit *= 2
+        return digit;
         }
         printf("sum: %li\n", sum);
 
@@ -43,4 +42,3 @@ int main(void)
     //check for length and starting digits
 
     //print AMEX, MASTERCARD, VISA or INVALID
-}

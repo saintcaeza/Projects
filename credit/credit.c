@@ -20,7 +20,7 @@ int main(void)
     //multiply every other digit by 2, starting with second-to-last digit
     //check for the last digits using modulo
     for(int i = 100, i < number; i += 100){
-        checksum = number % 100;
+        checksum = number % i;
     }
     checksum /= 10;
 

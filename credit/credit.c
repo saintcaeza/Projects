@@ -31,6 +31,7 @@ int main(void)
         else
         {
             sum += digit;
+            return sum;
         }
         printf("sum: %li\n", sum);
 

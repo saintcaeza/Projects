@@ -12,23 +12,21 @@ int main(void)
     while(number < 0);
 
     //calculate checksum
-
-    //multiply every other digit by 2, starting with second-to-last digit
-    //check for the last digits using modulo
     long digit = 0;
     long sum = 0;
 
+    //check for the last digits using modulo
     for(long i = 100; i < number; i *= 100)
     {
         digit = number % i;
 
-         //Add those products' digits together
-        if(digit > 9)
+        //Makes sure whatever is added to the sum is a single digit
+        for(j = 10; j < digit; j *= 10);
         {
-            digit /= 10;
+            digit = digit / j;
             return digit;
         }
-        else
+
         {
             sum += digit;
             return sum;
@@ -36,6 +34,9 @@ int main(void)
         printf("sum: %li\n", sum);
 
     }
+             //Add those products' digits together
+
+    //multiply every other digit by 2, starting with second-to-last digit
 
         //add the some to the sum of the digits that weren't multiplied by 2
 

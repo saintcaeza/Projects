@@ -16,7 +16,7 @@ int main(void)
     //multiply every other digit by 2, starting with second-to-last digit
     //check for the last digits using modulo
     long checksum;
-    for(long i = 100, i < number; i += 100)
+    for(long i = 100; i < number; i += 100)
     {
         checksum = number % i;
     }

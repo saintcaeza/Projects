@@ -18,7 +18,7 @@ int main(void)
     long digit = 0;
     long sum = 0;
 
-    for(long i = 100; i < number; i * 100)
+    for(long i = 100; i < number; i *= 100)
     {
         digit = number % i;
 
@@ -32,8 +32,9 @@ int main(void)
         {
             sum += digit;
         }
+        printf("sum: %li\n", sum);
+
     }
-    printf("digit: %li\n", digit);
 
         //add the some to the sum of the digits that weren't multiplied by 2
 

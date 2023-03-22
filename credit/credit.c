@@ -19,6 +19,7 @@ int main(void)
 
     //multiply every other digit by 2, starting with second-to-last digit
     //ceck for the last digits using modulo
+    long checksum = number % 100;
     
 
         //Add those products' digits together

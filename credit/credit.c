@@ -16,14 +16,14 @@ int main(void)
     //multiply every other digit by 2, starting with second-to-last digit
     //check for the last digits using modulo
     long checksum = 0;
-    for(long i = 100; i < number; i += 100)
+    for(long i = 100; i < number; i * 100)
     {
         checksum = number % i;
+        if
         return checksum;
+        //Add those products' digits together
     }
     printf("checksum: %li\n", checksum);
-
-        //Add those products' digits together
 
         //add the some to the sum of the digits that weren't multiplied by 2
 

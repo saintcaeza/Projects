@@ -18,6 +18,7 @@ int main(void)
     }
 
     //check for length and starting digits
+    
         //multiply every other digit by 2, starting with second-to-last digit
         //ceck for the last digits using modulo
 

@@ -20,7 +20,7 @@ int main(void)
     {
         digit = number % i;
 
-        //Multiplies every other digit by 2, starting with second-to-last digit
+        //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
         if(digit > 9)
         {
             //Makes sure whatever is multiplied is a single digit
@@ -32,7 +32,7 @@ int main(void)
         }
         else
         {
-            sum = digit * 2
+            sum = sum + (digit * 2);
             return sum;
         }
     }

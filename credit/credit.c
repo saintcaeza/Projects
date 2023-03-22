@@ -17,14 +17,15 @@ int main(void)
 
     }
 
-    //check for length and starting digits
+    //multiply every other digit by 2, starting with second-to-last digit
+    //ceck for the last digits using modulo
     
-        //multiply every other digit by 2, starting with second-to-last digit
-        //ceck for the last digits using modulo
 
         //Add those products' digits together
 
         //add the some to the sum of the digits that weren't multiplied by 2
+
+    //check for length and starting digits
 
     //print AMEX, MASTERCARD, VISA or INVALID
 }

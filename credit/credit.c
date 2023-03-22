@@ -27,12 +27,12 @@ int main(void)
             return digit;
         }
 
-        digit *= 2
-        return digit;
-        }
+        sum = digit * 2
+        return sum;
+    }
         printf("sum: %li\n", sum);
 
-    }
+}
              //Add those products' digits together
 
     //multiply every other digit by 2, starting with second-to-last digit

@@ -19,6 +19,11 @@ int main(void)
     printf("number: %li\n", number);
 
     //check for length and starting digits
+        //multiply every other digit by 2, starting with second-to-last digit
+
+        //Add those products' digits together
+
+        //add the some to the sum of the digits that weren't multiplied by 2
 
     //print AMEX, MASTERCARD, VISA or INVALID
 }

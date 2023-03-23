@@ -4,7 +4,7 @@
 int main(void)
 {
     //prompts user for credit card number.
-    long number;
+    long long number;
     do
     {
         number = get_long("Give me a credit card number: ");
@@ -12,11 +12,11 @@ int main(void)
     while(number < 0);
 
     //calculate checksum
-    long digit = 0;
-    long sum = 0;
+    long long digit = 0;
+    long long sum = 0;
 
     //check for the last digits using modulo
-    for(long i = 100; i < number; i *= 100)
+    for(long long i = 100; i < number; i *= 100)
     {
         digit = number % i;
 
@@ -24,7 +24,7 @@ int main(void)
         if(digit > 9)
         {
             //Makes sure whatever is multiplied is a single digit
-            for(long j = 10; j < digit; j *= 10);
+            for(long long j = 10; j < digit; j *= 10);
             {
                 digit = digit / j;
                 return digit;

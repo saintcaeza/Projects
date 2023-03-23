@@ -26,6 +26,7 @@ int main(void)
             //Makes sure whatever is multiplied is a single digit
             for(long long j = 10; j < digit; j *= 10);
             {
+                long long divisor = 
                 digit = digit / j;
                 return digit;
             }

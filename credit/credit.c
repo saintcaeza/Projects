@@ -10,11 +10,8 @@ int main(void)
         number = get_long_long("Give me a credit card number: ");
     }
     while(number < 0);
-    printf("sum: %lld\n", number);
 
-    //calculate checksum
-
-    /*
+    //calculate checksum    `1
     long long digit = 0;
     long long sum = 0;
 

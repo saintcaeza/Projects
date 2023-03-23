@@ -7,11 +7,14 @@ int main(void)
     long long number;
     do
     {
-        number = get_long("Give me a credit card number: ");
+        number = get_long_long("Give me a credit card number: ");
     }
     while(number < 0);
+    printf("sum: %lld\n", number);
 
     //calculate checksum
+
+    /*
     long long digit = 0;
     long long sum = 0;
 
@@ -36,10 +39,10 @@ int main(void)
             sum = sum + (digit * 2);
             return sum;
         }
-        printf("sum: %li\n", sum);
+        printf("sum: %lld\n", sum);
 
     }
-
+*/
 }
              //Add those products' digits together
 

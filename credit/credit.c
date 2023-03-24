@@ -27,7 +27,7 @@ int main(void)
     }
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
         printf("sum: %li\n", digit);
-        printf("sum: %li\n", sum);
+        printf("sum: %i\n", sum);
 
 
 

@@ -14,8 +14,8 @@ int main(void)
     //calculate checksum    `1
     long long digit = 0;
     int sum = 0;
-    int d = 10;
-    int n = 100;
+    long d = 10;
+    long n = 100;
 
     //check for the last digits using modulo
     for(long long i = 100; i < num; i *= 100)
@@ -25,8 +25,9 @@ int main(void)
         d *= 100;
         n *= 100;
     }
+    printf("sum: %i\n", sum);
+
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
-    //    printf("sum: %i\n", sum);
 
 
 

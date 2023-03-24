@@ -12,7 +12,7 @@ int main(void)
     while(num < 0);
 
     //calculate checksum    `1
-    long long digit = 0;
+    long digit = 0;
     int sum = 0;
     long d = 10;
     long n = 100;
@@ -21,6 +21,8 @@ int main(void)
     for(long long i = 100; i < num; i *= 100)
     {
         digit = (num % n) / (n/d);
+        printf("digit: %li\n", digit);
+
         sum += (digit * 2);
         d *= 100;
         n *= 100;

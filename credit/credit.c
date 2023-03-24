@@ -20,10 +20,14 @@ int main(void)
     {
         int d = 10;
         int n = 100;
-        int digit = (num % n) / (n/d);
+        digit = (num % n) / (n/d);
         d *= 100;
         n *= 100;
+        return digit;
+        printf("sum: %li\n", digit);
+
     }
+
         //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
       /*  if(digit > 9)
         {
@@ -40,9 +44,7 @@ int main(void)
             sum = sum + (digit * 2);
             return sum;
         }
-        printf("sum: %lld\n", sum);
         */
-*/
 }
              //Add those products' digits together
 

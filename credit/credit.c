@@ -26,8 +26,9 @@ int main(void)
         n *= 100;
     }
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
-    digit
         printf("sum: %li\n", digit);
+        printf("sum: %li\n", sum);
+
 
 
       /*  if(digit > 9)

@@ -21,7 +21,7 @@ int main(void)
         int d = 10;
         int n = 100;
         digit = (num % n) / (n/d);
-        sum += digit * 2;
+        sum += (digit * 2);
         d *= 100;
         n *= 100;
     }

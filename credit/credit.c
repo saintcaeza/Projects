@@ -23,7 +23,6 @@ int main(void)
         digit = (num % n) / (n/d);
         d *= 100;
         n *= 100;
-        return digit;
     }
         printf("sum: %li\n", digit);
 

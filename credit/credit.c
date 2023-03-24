@@ -14,19 +14,20 @@ int main(void)
     //calculate checksum    `1
     long digit = 0;
     int sum = 0;
+    int d = 10;
+    int n = 100;
 
     //check for the last digits using modulo
     for(long i = 100; i < num; i *= 100)
     {
-        int d = 10;
-        int n = 100;
-        printf("digit: %li\n", digit);
-        printf("digit: %li\n", digit);
-        printf("digit: %li\n", digit);
-
+        printf("d: %i\n", d);
+        printf("n: %i\n", n);
+        
         digit = (num % n) / (n/d);
         d *= 100;
         n *= 100;
+        printf("d: %i\n", d);
+        printf("n: %i\n", n);
         printf("digit: %li\n", digit);
     }
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together

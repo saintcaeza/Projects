@@ -20,7 +20,7 @@ int main(void)
     //check for the last digits using modulo
     for(long long i = 100; i < num; i *= 100)
     {
-        digit = (num % n) / (n/d);
+        digit = (num % n) / d;
         printf("digit: %li\n", digit);
         printf("c: %li\n", n);
         printf("d: %li\n", d);

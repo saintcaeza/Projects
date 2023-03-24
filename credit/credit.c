@@ -24,10 +24,10 @@ int main(void)
         printf("digit: %li\n", digit);
 
         sum += (digit * 2);
+        printf("sum: %i\n", sum);
         d *= 100;
         n *= 100;
     }
-    printf("sum: %i\n", sum);
 
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
 

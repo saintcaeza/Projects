@@ -22,6 +22,10 @@ int main(void)
     {
         digit = (num % n) / (n/d);
         printf("digit: %li\n", digit);
+        printf("c: %li\n", n);
+        printf("d: %li\n", d);
+
+
 
         sum += (digit * 2);
         printf("sum: %i\n", sum);

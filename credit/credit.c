@@ -26,7 +26,7 @@ int main(void)
         d *= 100;
         n *= 100;
     }
-    for(long i = 100; i <= num * 10; i *= 10)
+    for(long i = 10; i < num; i *= 100)
     {
         digit = (num % n) / d;
         sum += (digit * 2);

@@ -12,27 +12,21 @@ int main(void)
     while(num < 0);
 
     //calculate checksum    `1
-    long digit = 0;
+    long long digit = 0;
     int sum = 0;
     int d = 10;
     int n = 100;
 
     //check for the last digits using modulo
-    for(long i = 100; i < num; i *= 100)
+    for(long long i = 100; i < num; i *= 100)
     {
-        printf("d: %i\n", d);
-        printf("n: %i\n", n);
-        
         digit = (num % n) / (n/d);
+        sum += (digit * 2);
         d *= 100;
         n *= 100;
-        printf("d: %i\n", d);
-        printf("n: %i\n", n);
-        printf("digit: %li\n", digit);
     }
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
     //    printf("sum: %i\n", sum);
-  //      sum += (digit * 2);
 
 
 

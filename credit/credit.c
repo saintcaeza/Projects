@@ -26,6 +26,13 @@ int main(void)
         d *= 100;
         n *= 100;
     }
+    for(long i = 100; i <= num * 10; i *= 10)
+    {
+        digit = (num % n) / d;
+        sum += (digit * 2);
+        d *= 100;
+        n *= 100;
+    }
 }
         //add the some to the sum of the digits that weren't multiplied by 2
 

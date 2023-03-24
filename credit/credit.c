@@ -18,7 +18,7 @@ int main(void)
     long n = 100;
 
     //check for the last digits using modulo
-    for(long i = 100; i <= num; i *= 100)
+    for(long i = 100; i <= num * 100; i *= 100)
     {
         digit = (num % n) / d;
         printf("digit: %li\n", digit);

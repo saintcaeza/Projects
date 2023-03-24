@@ -21,12 +21,12 @@ int main(void)
         int d = 10;
         int n = 100;
         digit = (num % n) / (n/d);
-        sum += digit* 2
+        sum += digit * 2;
         d *= 100;
         n *= 100;
     }
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
-        printf("sum: %li\n", digit);
+        printf("digit: %li\n", digit);
         printf("sum: %i\n", sum);
 
 

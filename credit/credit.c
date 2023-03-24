@@ -20,14 +20,18 @@ int main(void)
     {
         int d = 10;
         int n = 100;
+        printf("digit: %li\n", digit);
+        printf("digit: %li\n", digit);
+        printf("digit: %li\n", digit);
+
         digit = (num % n) / (n/d);
-        sum += (digit * 2);
         d *= 100;
         n *= 100;
+        printf("digit: %li\n", digit);
     }
     //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
-        printf("digit: %li\n", digit);
-        printf("sum: %i\n", sum);
+    //    printf("sum: %i\n", sum);
+  //      sum += (digit * 2);
 
 
 

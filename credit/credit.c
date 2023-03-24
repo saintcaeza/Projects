@@ -13,7 +13,7 @@ int main(void)
 
     //calculate checksum    `1
     long digit = 0;
-    long sum = 0;
+    int sum = 0;
 
     //check for the last digits using modulo
     for(long i = 100; i < num; i *= 100)

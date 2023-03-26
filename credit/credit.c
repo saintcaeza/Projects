@@ -12,30 +12,84 @@ int main(void)
     while(num < 0);
 
     //calculate checksum    `1
-    long digit = 0;
+    long check = 0;
     int sum = 0;
     long d = 10;
     long n = 100;
+    int digit = 0;
 
-    //check for the last digits using modulo
-    //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
+    //check for the last checks using modulo
+    //Multiplies every other check by 2, starting with second-to-last check and adds those checks together
     for(long i = 100; i <= num * 100; i *= 100)
     {
-        digit = (num % n) / d;
-        sum += (digit * 2);
+        check = (num % n) / d;
+        check *= 2;
+        if(check < 9)
+        {
+            sum += check % 10;
+            sum += check / 10;
+        }
+        else
+        {
+            sum += check;
+        }
         d *= 100;
         n *= 100;
+        digit ++;
     }
+
+    long altcheck = 0;
+    int altsum = 0;
+    long b = 10;
+    long c = 1;
+
     for(long i = 10; i < num; i *= 100)
     {
-        digit = (num % n) / d;
-        sum += (digit * 2);
-        d *= 100;
-        n *= 100;
+        altcheck = (num % b) / c;
+        sum += (check * 2);
+        b *= 100;
+        c *= 100;
+        digit ++;
+    }
+
+    //add the some to the sum of the checks that weren't multiplied by 2
+    sum += altsum;
+
+    //check for length and starting checks
+     //print AMEX, MASTERCARD, VISA or INVALID
+
+    if (sum % 10 > 0)
+    {
+        printf("INVALID\n,");
+    }
+    else if (digit == 15)
+    {
+        //american express 34 37
+        if (num / 12 == (37 | 34))
+        {
+            printf("AMEX/n");
+        }
+        else
+        {
+            printf("INVALID\n,");
+        }
+    }
+    else if (digit == (16 | 13))
+    {
+        //mastercard
+        if (num / (12 | 15) == 4)
+        {
+            printf("VISA\n");
+        }
+        else if (num / 14 == (52 | 51 | 53 | 54 | 55))
+        {
+            printf("MASTERCARD\n");
+        }
+        else
+        {
+            printf("INVALID\n,");
+        }
     }
 }
-        //add the some to the sum of the digits that weren't multiplied by 2
 
-    //check for length and starting digits
 
-    //print AMEX, MASTERCARD, VISA or INVALID

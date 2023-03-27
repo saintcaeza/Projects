@@ -37,8 +37,6 @@ int main(void)
         d *= 100;
         n *= 100;
         length ++;
-        printf("length: %i\n", length);
-
     }
 
     long altcheck = 0;
@@ -52,7 +50,6 @@ int main(void)
         sum += (check * 2);
         b *= 100;
         c *= 100;
-        printf("length: %i\n", length);
         length ++;
     }
 
@@ -69,7 +66,7 @@ int main(void)
     if (length == 15)
     {
         //american express 34 37
-        if ((num / 12 == 37) || (num / 12 == 34))
+        if ((num / 100000000000000 == 37) || (num / 100000000000000 == 34))
         {
             printf("AMEX\n");
         }

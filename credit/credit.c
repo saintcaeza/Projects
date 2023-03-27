@@ -72,7 +72,7 @@ int main(void)
         }
         else
         {
-            printf("INVALID, wrong card\n,");
+            printf("INVALID\n,");
         }
     }
     else if ((length == 16) || (length == 13))
@@ -88,7 +88,11 @@ int main(void)
         }
         else
         {
-            printf("INVALID wrong card ...16\n,");
+            printf("INVALID\n,");
         }
+    }
+    else
+    {
+        printf("INVALID\n,");
     }
 }

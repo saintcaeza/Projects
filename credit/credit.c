@@ -85,7 +85,7 @@ int main(void)
         {
             printf("VISA\n");
         }
-        else if ((num / 10  == 51) || (num / 10 == 53) || (num / 10 == 54) || (num / 10 == 55))
+        else if ((num / 1000000000000000  == 51) || (num / 1000000000000000 == 53) || (num / 1000000000000000 == 54) || (num / 1000000000000000 == 55))
         {
             printf("MASTERCARD\n");
         }
@@ -95,8 +95,3 @@ int main(void)
         }
     }
 }
-/*
-for (int i; i <= num; i * 10)
-{
-    length ++;
-} */

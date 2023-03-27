@@ -81,10 +81,10 @@ int main(void)
     else if ((length == 16) || (length == 13))
     {
         //mastercard
-        int print = num / (10 * 15);
+        long print = num / (10 ** 15);
         printf("number / 10 is: %i. \n", print);
 
-        if ((num / (10 * 15) == 4))
+        if ((num / (10 ** 15) == 4))
         {
             printf("VISA\n");
         }

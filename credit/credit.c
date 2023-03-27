@@ -46,7 +46,7 @@ int main(void)
     long b = 10;
     long c = 1;
 
-    for(long i = 10; i <= num * 100; i *= 100)
+    for(long i = 10; i < num ; i *= 100)
     {
         altcheck = (num % b) / c;
         sum += (check * 2);
@@ -81,11 +81,11 @@ int main(void)
     else if ((length == 16) || (length == 13))
     {
         //mastercard
-        if ((num / 12 == 4) || (num / 15 == 4))
+        if ((num / (10 * 12) == 4) || (num / (10 * 15) == 4))
         {
             printf("VISA\n");
         }
-        else if ((num / 14 == 51) || (num / 14 == 53) || (num / 14 == 54) || (num / 14 == 55))
+        else if ((num / (10 * 14) == 51) || (num / (10 * 14) == 53) || (num / (10 * 14) == 54) || (num / (10 * 14) == 55))
         {
             printf("MASTERCARD\n");
         }

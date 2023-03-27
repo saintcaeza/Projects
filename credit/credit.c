@@ -11,20 +11,21 @@ int main(void)
     }
     while(num < 0);
 
-    //calculate checksum    `1
+    //calculate checksum
     long check = 0;
     int sum = 0;
     long d = 10;
     long n = 100;
-    int digit = 0;
+    int length = 0;
 
     //check for the last checks using modulo
-    //Multiplies every other check by 2, starting with second-to-last check and adds those checks together
-    for(long i = 100; i <= num * 100; i *= 100)
+    for(long i = 100; i <= num * 100 ; i *= 100)
     {
         check = (num % n) / d;
         check *= 2;
-        if(check < 9)
+
+         //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
+        if(check > 9)
         {
             sum += check % 10;
             sum += check / 10;
@@ -35,7 +36,9 @@ int main(void)
         }
         d *= 100;
         n *= 100;
-        digit ++;
+        length ++;
+        printf("length: %i\n", length);
+
     }
 
     long altcheck = 0;
@@ -43,13 +46,14 @@ int main(void)
     long b = 10;
     long c = 1;
 
-    for(long i = 10; i < num; i *= 100)
+    for(long i = 10; i <= num * 100; i *= 100)
     {
         altcheck = (num % b) / c;
         sum += (check * 2);
         b *= 100;
         c *= 100;
-        digit ++;
+        printf("length: %i\n", length);
+        length ++;
     }
 
     //add the some to the sum of the checks that weren't multiplied by 2
@@ -58,38 +62,41 @@ int main(void)
     //check for length and starting checks
      //print AMEX, MASTERCARD, VISA or INVALID
 
-    if (sum % 10 > 0)
+  /*  if (num % 10 > 0)
     {
-        printf("INVALID\n,");
-    }
-    else if (digit == 15)
+        printf("INVALID not a card number\n,");
+    }*/
+    if (length == 15)
     {
         //american express 34 37
-        if (num / 12 == (37 | 34))
+        if ((num / 12 == 37) || (num / 12 == 34))
         {
-            printf("AMEX/n");
+            printf("AMEX\n");
         }
         else
         {
-            printf("INVALID\n,");
+            printf("INVALID, wrong card\n,");
         }
     }
-    else if (digit == (16 | 13))
+    else if ((length == 16) || (length == 13))
     {
         //mastercard
-        if (num / (12 | 15) == 4)
+        if ((num / 12 == 4) || (num / 15 == 4))
         {
             printf("VISA\n");
         }
-        else if (num / 14 == (52 | 51 | 53 | 54 | 55))
+        else if ((num / 14 == 51) || (num / 14 == 53) || (num / 14 == 54) || (num / 14 == 55))
         {
             printf("MASTERCARD\n");
         }
         else
         {
-            printf("INVALID\n,");
+            printf("INVALID wrong card ...16\n,");
         }
     }
 }
-
-
+/*
+for (int i; i <= num; i * 10)
+{
+    length ++;
+} */

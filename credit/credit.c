@@ -81,7 +81,8 @@ int main(void)
     else if ((length == 16) || (length == 13))
     {
         //mastercard
-        if ((num / 10 == 4) || (num / 10 == 4))
+        printf(num / 10);
+        if ((num / 10 == 4))
         {
             printf("VISA\n");
         }

@@ -66,7 +66,7 @@ int main(void)
     else if (length == 15)
     {
         //american express 34 37
-        if ((num / 1000000000000 == 37) || (num / 1000000000000 == 34))
+        if ((num / 10000000000000 == 37) || (num / 10000000000000 == 34))
         {
             printf("AMEX\n");
         }

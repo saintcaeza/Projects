@@ -63,7 +63,7 @@ int main(void)
         printf("sum %i\n", sum);
         printf("INVALID s\n");
     } */
-    else if (length == 15)
+    if (length == 15)
     {
         //american express 34 37
         if ((num / 10000000000000 == 37) || (num / 10000000000000 == 34))

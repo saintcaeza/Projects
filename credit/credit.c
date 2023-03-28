@@ -72,12 +72,12 @@ int main(void)
         }
         else
         {
-            printf("INVALID a\n");
+            printf("INVALID\n");
         }
     }
     else if ((length == 16) || (length == 13))
     {
-        if ((num / 1000000000000000 == 4) || (num / 10000000000000 == 4))
+        if ((num / 1000000000000000 == 4) || (num / 1000000000000 == 4))
         {
             printf("VISA\n");
         }

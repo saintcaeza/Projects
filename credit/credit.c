@@ -61,7 +61,7 @@ int main(void)
     if (sum % 10 != 0)
     {
         printf("sum %i\n", sum);
-        printf("INVALID  s\n");
+        printf("INVALID s\n");
     }
     else if (length == 15)
     {

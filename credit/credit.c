@@ -48,7 +48,7 @@ int main(void)
     long b = 10;
     long c = 1;
 
-    for(long i = 10; i < num ; i *= 100)
+    for(long i = 10; i < num* 100 ; i *= 100)
     {
         altcheck = (num % b) / c;
         printf("altcheck: %li\n", altcheck);

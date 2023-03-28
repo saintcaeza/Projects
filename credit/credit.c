@@ -23,16 +23,20 @@ int main(void)
     {
         check = (num % n) / d;
         check *= 2;
-
+        printf("check: %li\n", check);
          //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
         if(check > 9)
         {
             sum += check % 10;
             sum += check / 10;
+            printf("sum: %i\n", sum);
+
         }
         else
         {
             sum += check;
+            printf("sum: %i\n", sum);
+
         }
         d *= 100;
         n *= 100;
@@ -47,7 +51,10 @@ int main(void)
     for(long i = 10; i < num* 100 ; i *= 100)
     {
         altcheck = (num % b) / c;
+        printf("altcheck: %li\n", altcheck);
+
         altsum += altcheck;
+        printf("altsum: %i\n", altsum);
 
         b *= 100;
         c *= 100;
@@ -56,12 +63,13 @@ int main(void)
 
     //add the some to the sum of the checks that weren't multiplied by 2
     sum += altsum;
+    printf("sum: %i\n", sum);
 
     //check for length and starting checks
      //print AMEX, MASTERCARD, VISA or INVALID
     if (sum % 10 != 0)
     {
-        printf("INVALID\n");
+        printf("INVALID default\n");
     }
     else
     {
@@ -74,7 +82,7 @@ int main(void)
             }
             else
             {
-                printf("INVALID\n");
+                printf("INVALID amex\n");
             }
         }
         else if ((length == 16) || (length == 13))
@@ -90,7 +98,7 @@ int main(void)
             }
             else
             {
-                printf("INVALID\n");
+                printf("INVALID Mastercard\n");
             }
         }
     }

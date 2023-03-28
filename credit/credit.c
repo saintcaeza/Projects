@@ -69,10 +69,10 @@ int main(void)
         {
             printf("AMEX\n");
         }
-        else
+        /*else
         {
             printf("INVALID\n");
-        }
+        }*/
     }
     else if ((length == 16) || (length == 13))
     {
@@ -85,10 +85,10 @@ int main(void)
         {
             printf("MASTERCARD\n");
         }
-        else
+       /*  else
         {
             printf("INVALID\n");
-        }
+        } */
     }
     else
     {

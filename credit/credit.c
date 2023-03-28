@@ -9,7 +9,7 @@ int main(void)
     {
         num = get_long("Give me a credit card number: ");
     }
-    while(num < 0);
+    while (num < 0);
 
     //calculate checksum
     long check = 0;
@@ -19,13 +19,13 @@ int main(void)
     int length = 0;
 
     //check for the last digit using modulo
-    for(long i = 100; i < num * 10; i *= 100)
+    for (long i = 100; i < num * 10; i *= 100)
     {
         check = (num % n) / d;
         check *= 2;
 
-         //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
-        if(check > 9)
+        //Multiplies every other digit by 2, starting with second-to-last digit and adds those digits together
+        if (check > 9)
         {
             sum += check % 10;
             sum += check / 10;
@@ -44,7 +44,7 @@ int main(void)
     long b = 10;
     long c = 1;
 
-    for(long i = 10; i < num * 10; i *= 100)
+    for (long i = 10; i < num * 10; i *= 100)
     {
         altcheck = (num % b) / c;
         altsum += altcheck;
@@ -58,12 +58,12 @@ int main(void)
     sum += altsum;
 
     //check for length and starting checks
-     //print AMEX, MASTERCARD, VISA or INVALID
+    //print AMEX, MASTERCARD, VISA or INVALID
     if (sum % 10 == 0)
     {
         if (length == 15)
         {
-        //american express 34 37
+            //american express 34 37
             if ((num / 10000000000000 == 37) || (num / 10000000000000 == 34))
             {
                 printf("AMEX\n");
@@ -79,13 +79,14 @@ int main(void)
             {
                 printf("VISA\n");
             }
-            else if ((num / 100000000000000  == 51) || (num / 100000000000000 == 53) || (num / 100000000000000 == 54) || (num / 100000000000000 == 55))
+            else if ((num / 100000000000000  == 51) || (num / 100000000000000 == 53) || (num / 100000000000000 == 54)
+                      || (num / 100000000000000 == 55))
             {
-                 printf("MASTERCARD\n");
+                printf("MASTERCARD\n");
             }
             else
             {
-            printf("INVALID\n");
+                printf("INVALID\n");
             }
         }
         else

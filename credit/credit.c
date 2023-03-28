@@ -54,7 +54,7 @@ int main(void)
         length ++;
     }
 
-    //add the some to the sum of the checks that weren't multiplied by 2
+    //add the sum to the altsum of the digits that weren't multiplied by 2
     sum += altsum;
 
     //check for length and starting checks

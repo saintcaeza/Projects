@@ -55,6 +55,7 @@ int main(void)
 
     //add the some to the sum of the checks that weren't multiplied by 2
     sum += altsum;
+    printf("sum %i\n", sum);
 
     //check for length and starting checks
      //print AMEX, MASTERCARD, VISA or INVALID

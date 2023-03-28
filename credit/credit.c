@@ -83,7 +83,6 @@ int main(void)
             {
                 printf("VISA\n");
             }
-            //mastercard
             else if ((num / 100000000000000  == 51) || (num / 100000000000000 == 53) || (num / 100000000000000 == 54) || (num / 100000000000000 == 55))
             {
                  printf("MASTERCARD\n");

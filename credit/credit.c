@@ -62,36 +62,35 @@ int main(void)
     {
         printf("INVALID\n");
     }
-    if (length == 15)
-    {
-        //american express 34 37
-        if ((num / 10000000000000 == 37) || (num / 10000000000000 == 34))
-        {
-            printf("AMEX\n");
-        }
-        else
-        {
-            printf("INVALID\n");
-        }
-    }
-    else if ((length == 16) || (length == 13))
-    {
-        if ((num / 1000000000000000 == 4) || (num / 1000000000000 == 4))
-        {
-            printf("VISA\n");
-        }
-        //mastercard
-        else if ((num / 100000000000000  == 51) || (num / 100000000000000 == 53) || (num / 100000000000000 == 54) || (num / 100000000000000 == 55))
-        {
-            printf("MASTERCARD\n");
-        }
-        else
-        {
-            printf("INVALID\n");
-        }
-    }
     else
     {
-        printf("INVALID\n");
+        if (length == 15)
+        {
+        //american express 34 37
+            if ((num / 10000000000000 == 37) || (num / 10000000000000 == 34))
+            {
+                printf("AMEX\n");
+            }
+            else
+            {
+                printf("INVALID\n");
+            }
+        }
+        else if ((length == 16) || (length == 13))
+        {
+            if ((num / 1000000000000000 == 4) || (num / 1000000000000 == 4))
+            {
+                printf("VISA\n");
+            }
+            //mastercard
+            else if ((num / 100000000000000  == 51) || (num / 100000000000000 == 53) || (num / 100000000000000 == 54) || (num / 100000000000000 == 55))
+            {
+                 printf("MASTERCARD\n");
+            }
+            else
+            {
+                printf("INVALID\n");
+            }
+        }
     }
 }

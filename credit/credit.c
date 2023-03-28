@@ -59,11 +59,7 @@ int main(void)
 
     //check for length and starting checks
      //print AMEX, MASTERCARD, VISA or INVALID
-    if (sum % 10 != 0)
-    {
-        printf("INVALID\n");
-    }
-    else
+    if (sum % 10 == 0)
     {
         if (length == 15)
         {
@@ -91,6 +87,10 @@ int main(void)
             {
                 printf("INVALID\n");
             }
+        }
+        else
+        {
+            printf("INVALID\n");
         }
     }
 }

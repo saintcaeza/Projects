@@ -18,7 +18,7 @@ int main(void)
     long n = 100;
     int length = 0;
 
-    //check for the last checks using modulo
+    //check for the last digit using modulo
     for(long i = 100; i <= num * 100 ; i *= 100)
     {
         check = (num % n) / d;

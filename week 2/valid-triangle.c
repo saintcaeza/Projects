@@ -22,7 +22,8 @@ int main(void)
 
 bool triangle_sides(int sides[])
 {
-    if 
+    //Check if th
+    if
 }
 //Output true or false depending on whether those three lengths are capable of makeing a triangle
 //if a+b >c || b+c > a output false

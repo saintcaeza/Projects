@@ -19,4 +19,4 @@ int score(char a[], char b[])
     print “Player 1 wins!”, “Player 2 wins!”, or “Tie!”
 }
 
-compare the arrat for the string to the alphabet 
+compare the arrat for the string to the alphabet array, then 

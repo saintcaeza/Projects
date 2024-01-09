@@ -6,13 +6,13 @@ int score(char a[], char b[]);
 
 int main(void)
 {
-    char player1[] = get_int("Player 1: ");
-    char player2[] = get_int("Player 2: ");
+    string player1 = get_string("Player 1: ");
+    string player2 = get_string("Player 2: ");
 
     string points = score(player1, player2);
 }
 
-int score(char a[], char b[])
+int score(string a[], string b[])
 {
     int n = 0;
     int sum1;

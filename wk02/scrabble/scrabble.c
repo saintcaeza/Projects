@@ -48,8 +48,5 @@ int score(char a[], char b[])
     {
         printf("Tie!");
     }
-
-    compare player 1 and 2
-    print “Player 1 wins!”, “Player 2 wins!”, or “Tie!”
 }
 

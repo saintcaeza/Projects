@@ -2,7 +2,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int score(char a[], char b[]);
+string score(string a[],string b[]);
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
     string points = score(player1, player2);
 }
 
-int score(string a[], string b[])
+string score(string a[], string b[])
 {
     int n = 0;
     int sum1;

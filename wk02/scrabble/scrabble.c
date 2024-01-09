@@ -27,13 +27,12 @@ int score(char a[], char b[])
         if (alphabet[i] = a[n])
         {
             sum1 += point[i];
+            n++
         }
         if (aplhabet[i] = b[n])
         {
             sum2 += point[i];
         }
-
-        n++;
     }
 
     if (sum1 > sum2)

@@ -4,6 +4,7 @@
 
 int score(char a[], char b[]);
 
+int sum;
 int main(void)
 {
     char player1[] = get_int("Player 1: ");

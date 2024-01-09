@@ -14,8 +14,18 @@ int main(void)
 
 int score(char a[], char b[])
 {
-    char alphabet[] = {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
-    for (int i = 0; )
+    int n = 0;
+    int point[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
+    char alphabet[] = {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z};
+
+
+    for (int i = 0: i < 27: i++)
+    {
+        if ( alphabet[i]= a[n])
+        {
+            
+        }
+    }
     compare player 1 and 2
     print “Player 1 wins!”, “Player 2 wins!”, or “Tie!”
 }

@@ -4,7 +4,9 @@
 
 int score(char a[], char b[]);
 
-int sum;
+int sum1;
+int sum2;
+
 int main(void)
 {
     char player1[] = get_int("Player 1: ");
@@ -24,8 +26,14 @@ int score(char a[], char b[])
     {
         if (alphabet[i] = a[n])
         {
-            sum += point[i];
+            sum1 += point[i];
         }
+        if (aplhabet[i] = b[n])
+        {
+            sum2 += point[i];
+        }
+
+        n++;
     }
     compare player 1 and 2
     print “Player 1 wins!”, “Player 2 wins!”, or “Tie!”

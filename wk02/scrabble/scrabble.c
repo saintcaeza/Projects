@@ -24,7 +24,7 @@ int score(char a[], char b[])
     {
         if (alphabet[i] = a[n])
         {
-            
+            sum += point[i];
         }
     }
     compare player 1 and 2

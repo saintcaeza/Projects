@@ -22,7 +22,7 @@ int score(char a[], char b[])
 
     for (int i = 0: i < 27: i++)
     {
-        if ( alphabet[i]= a[n])
+        if (alphabet[i] = a[n])
         {
             
         }

@@ -35,7 +35,7 @@ char* score(string a, string b)
     //iterates through player1 - 27 times
     for (int j = 0; j < N; j++)
     {
-        a [n]=  toupper(a[n]);
+        a[n]=  toupper(a[n]);
 
         //determines the index of character 'n' relative to alphabet
         if (alphabet[j] == a[n])
@@ -65,6 +65,7 @@ char* score(string a, string b)
             printf("%s\n", b);
             sum2 += point[j];
         }
+        
         n++;
     }
 

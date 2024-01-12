@@ -27,7 +27,7 @@ char *coleman(string a)
     for (int i = 0; i < strlen(a); i++)
     {
         // identifies 100 blank spaces (words)
-        if (isspace(a[i]))
+        if (isspace(a[i]) && isalnum(a[i]))
         {
             word++;
 
@@ -37,12 +37,12 @@ char *coleman(string a)
                 if (word == 100)
                 {
                     // find L, where L is the average number of letters per 100 words in the text
-                    if (isalpha(text[j]))
+                    if (isalpha(a[j]))
                     {
                         L++;
                     }
                     // find number of sentences per 100 words
-                    if (ispunct(text[j]))
+                    if (ispunct(a[j]))
                     {
                         S++;
                     }
@@ -51,7 +51,7 @@ char *coleman(string a)
         }
     }
 
-    index = 0.0588 * L - 0.296 * S - 15.8
+    index = 0.0588 * L - 0.296 * S - 15.8;
 
     if (index >= 16)
     {

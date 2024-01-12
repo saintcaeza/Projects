@@ -68,3 +68,5 @@ char *coleman(string a)
 
     return grade;
 }
+char grade[50]; // make sure it's large enough
+sprintf(grade, "Grade %i\n", index);

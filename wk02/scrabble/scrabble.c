@@ -29,7 +29,7 @@ char* score(string a, string b)
     for (int i = 0; i < strlen(a); i++)
     {
         //iterates through player1 - 27 times
-        for (int j = 0; i < N; j++)
+        for (int j = 0; j < N; j++)
         {
             a[n] =  toupper(a[n]);
 

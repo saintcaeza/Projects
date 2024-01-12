@@ -28,41 +28,38 @@ char* score(string a, string b)
     //update sum1 with the score of player1
     for (int i = 0; i < strlen(a); i++)
     {
-        a[n] = toupper(a[n]);
+        a[i] = toupper(a[i]);
 
         //iterates through player1 27 times
         for (int j = 0; j < N; j++)
         {
         //determines the index of character 'n' relative to alphabet
-            if (alphabet[j] == a[n])
+            if (alphabet[j] == a[i])
             {
                 sum1 += point[j];
             }
         }
-
-        n++;
     }
 
     //update sum2 with the score of player2
     for (int i = 0; i < strlen(b); i++)
     {
-        b[n] = toupper(b[n]);
+        b[i] = toupper(b[i]);
 
         //iterates through player2 27 times
         for (int j = 0; j < N; j++)
         {
             //determines the index of character 'n' relative to alphabet
-            if (alphabet[j] == b[n])
+            if (alphabet[j] == b[i])
             {
                 sum2 += point[j];
             }
         }
-
-        n++;
     }
 
     //determines the winner by comparing sums
-  char* win = "No result yet\n";
+    char* win = "No result yet\n";
+
     if (sum1 > sum2)
     {
        win = "Player 1 wins!\n";

@@ -62,18 +62,18 @@ char* score(string a, string b)
     }
 
     //determines the winner by comparing sums
-  char* win = "No result yet";
+  char* win = "No result yet\n";
     if (sum1 > sum2)
     {
-       win = "Player 1 wins!";
+       win = "Player 1 wins!\n";
     }
     else if (sum1 < sum2)
     {
-        win = "Player 2 wins!";
+        win = "Player 2 wins!\n";
     }
     else if (sum1 == sum2)
     {
-        win = "Tie!";
+        win = "Tie!\n";
     }
     return win;
 }

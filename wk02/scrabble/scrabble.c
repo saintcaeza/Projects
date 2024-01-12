@@ -21,8 +21,7 @@ char* score(string a, string b)
     int n = 0;
     int sum1 = 0;
     int sum2 = 0;
-    a =  toupper(a);
-    b =  toupper(b);
+
     int point[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
     char alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
@@ -36,6 +35,9 @@ char* score(string a, string b)
     //iterates through player1 - 27 times
     for (int j = 0; j < N; j++)
     {
+        printf("%s\n", a);
+        a =  toupper(a[n]);
+
         //determines the index of character 'n' relative to alphabet
         if (alphabet[j] == a[n])
         {
@@ -54,6 +56,7 @@ char* score(string a, string b)
     } */
     for (int j = 0; j < N; j++)
     {
+            b =  toupper(b[n]);
         //determines the index of character 'n' relative to alphabet
         if (alphabet[j] == b[n])
         {

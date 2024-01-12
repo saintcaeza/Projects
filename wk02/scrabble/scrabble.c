@@ -21,46 +21,45 @@ char* score(string a, string b)
     int n = 0;
     int sum1 = 0;
     int sum2 = 0;
-
+    a =  toupper(a);
+    b =  toupper(b);
     int point[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
     char alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     //update sum1 with the score of player1
-    for (int i = 0; i < strlen(a); i++)
+    /* for (int i = 0; i < strlen(a); i++)
     {
-        //iterates through player1 - 27 times
-        for (int j = 0; j < N; j++)
-        {
-            a[n] =  toupper(a[n]);
-
-            //determines the index of character 'n' relative to alphabet
-            if (alphabet[j] == a[n])
-            {
-                printf("%s\n", a);
-                sum1 += point[j];
-            }
         }
 
         n++;
+    } */
+    //iterates through player1 - 27 times
+    for (int j = 0; j < N; j++)
+    {
+        //determines the index of character 'n' relative to alphabet
+        if (alphabet[j] == a[n])
+        {
+            printf("%s\n", a);
+            sum1 += point[j];
+        }
     }
 
     //update sum2 with the score of player2
-    for (int i = 0; i < strlen(b); i++)
+    /* for (int i = 0; i < strlen(b); i++)
     {
-         b[n] =  toupper(b[n]);
-
         //iterates through player2 - 27 times
-        for (int j = 0; j < N; j++)
-        {
-            //determines the index of character 'n' relative to alphabet
-            if (alphabet[j] == b[n])
-            {
-                printf("%s\n", b);
-                sum2 += point[j];
-            }
         }
 
         n++;
+    } */
+    for (int j = 0; j < N; j++)
+    {
+        //determines the index of character 'n' relative to alphabet
+        if (alphabet[j] == b[n])
+        {
+            printf("%s\n", b);
+            sum2 += point[j];
+        }
     }
 
     //determines the winner by comparing sums

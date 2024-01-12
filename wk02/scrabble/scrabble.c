@@ -49,11 +49,11 @@ char* score(string a, string b)
     //update sum2 with the score of player2
     for (int i = 0; i < strlen(b); i++)
     {
+        b[n] =  toupper(b[n]);
+
         //iterates through player2 - 27 times
         for (int j = 0; j < N; j++)
         {
-            b[n] =  toupper(b[n]);
-
             //determines the index of character 'n' relative to alphabet
             if (alphabet[j] == b[n])
             {

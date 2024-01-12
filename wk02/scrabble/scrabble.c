@@ -49,7 +49,7 @@ char* score(string a, string b)
          b[n] =  toupper(b[n]);
 
         //iterates through player2 - 27 times
-        for (int j = 0; i < N; j++)
+        for (int j = 0; j < N; j++)
         {
             //determines the index of character 'n' relative to alphabet
             if (alphabet[j] == b[n])

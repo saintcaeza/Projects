@@ -5,7 +5,7 @@
 
 char* score(string a,string b);
 
-const int N = 27;
+const int N = 26;
 
 int main(void)
 {

@@ -13,12 +13,13 @@ int calculate_grade(string text)
 {
     int word = 0;
     int L = 0;
+    int S = 0;
 
-    // identify sets of 100 words
+    // identify set of 100 words
     for (int i = 0; i < strlen(text); i++)
     {
         // identifies 100 blank spaces (words)
-        if (isblank(text[i]))
+        if (isspace(text[i]))
         {
             word++;
 
@@ -30,14 +31,17 @@ int calculate_grade(string text)
                 {
                     L++;
                 }
-                
+                if (ispunct(text[j]))
+                {
+                    S++;
+                }
             }
         }
+    }
 
-
-            // what isn't a leter? punctuation marks,spaces, numbers. everything else is a letter
-
-            // find S, where S is the average number of sentences per 100 words in the text
+    int coleman_index(int L, int S)
+    {
+        
     }
 
     // use the Coleman-Liau index to calculate the grade requred to read text

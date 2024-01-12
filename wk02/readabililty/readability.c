@@ -24,7 +24,7 @@ char *coleman(string a)
     char *grade = "No Grade yet. \n";
 
     // iterates through text
-    for (int i = 0; i < strlen(a[i]); i++)
+    for (int i = 0; i < strlen(a); i++)
     {
         // identifies 100 blank spaces (words)
         if (isspace(text[i]))

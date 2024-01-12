@@ -27,7 +27,7 @@ char *coleman(string a)
     for (int i = 0; i < strlen(a); i++)
     {
         // identifies 100 blank spaces (words)
-        if (isspace(a[i]) && isalnum(a[i]))
+        if (isspace(a[i]))
         {
             word++;
 

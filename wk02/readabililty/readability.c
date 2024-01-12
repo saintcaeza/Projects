@@ -11,17 +11,16 @@ int main(void)
 
 int calculate_grade(string text)
 {
-    // identify sets of 100 numbers
+    // identify sets of 100 words
     for (int i = 0; i < strlen(text); i++)
     {
-        
-    }
 
-            // find L, where L is the average number of letters per 100 words in the text
+        // find L, where L is the average number of letters per 100 words in the text
 
             // what isn't a leter? punctuation marks,spaces, numbers. everything else is a letter
 
             // find S, where S is the average number of sentences per 100 words in the text
+    }
 
     // use the Coleman-Liau index to calculate the grade requred to read text
         // index = 0.0588 * L - 0.296 * S - 15.8

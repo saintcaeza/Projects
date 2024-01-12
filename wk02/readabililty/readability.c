@@ -17,7 +17,7 @@ int calculate_grade(string text)
         // identifies 100 blank spaces (words)
         if (isblank(text[i]))
         {
-            for ()
+            for (int j = 0; j )
         }
         // find L, where L is the average number of letters per 100 words in the text
 

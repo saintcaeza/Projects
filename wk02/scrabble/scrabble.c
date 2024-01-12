@@ -36,7 +36,7 @@ char* score(string a, string b)
     for (int j = 0; j < N; j++)
     {
         printf("%s\n", a);
-        a =  toupper(a[n]);
+        a [n]=  toupper(a[n]);
 
         //determines the index of character 'n' relative to alphabet
         if (alphabet[j] == a[n])
@@ -56,7 +56,7 @@ char* score(string a, string b)
     } */
     for (int j = 0; j < N; j++)
     {
-            b =  toupper(b[n]);
+            b[n] =  toupper(b[n]);
         //determines the index of character 'n' relative to alphabet
         if (alphabet[j] == b[n])
         {

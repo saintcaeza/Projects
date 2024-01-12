@@ -59,7 +59,7 @@ char *coleman(string a)
     }
     else if (index > 1)
     {
-        grade = "Grade %i\n", index;
+        printf("Grade %i\n", index);
     }
     else if (index <= 1)
     {

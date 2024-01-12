@@ -25,7 +25,10 @@ int calculate_grade(string text)
             for (int j = 0; word = 100 : j < text[i]; j++)
             {
                 // find L, where L is the average number of letters per 100 words in the text
-                if ()
+                if (isalpha(text[j]))
+                {
+                    
+                }
             }
         }
 

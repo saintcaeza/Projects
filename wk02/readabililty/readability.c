@@ -14,7 +14,11 @@ int calculate_grade(string text)
     // identify sets of 100 words
     for (int i = 0; i < strlen(text); i++)
     {
-
+        // identifies 100 blank spaces (words)
+        if (isblank(text[i]))
+        {
+            
+        }
         // find L, where L is the average number of letters per 100 words in the text
 
             // what isn't a leter? punctuation marks,spaces, numbers. everything else is a letter

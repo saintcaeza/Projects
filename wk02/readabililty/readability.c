@@ -8,7 +8,7 @@ char *coleman(string a);
 
 int main(void)
 {
-    string text = get_string("Input sample text: \n");
+    string text = get_string("Input sample text: ");
 
     char *pointer = coleman(text);
     printf("%s\n", pointer);

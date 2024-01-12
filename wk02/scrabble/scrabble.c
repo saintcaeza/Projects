@@ -26,22 +26,21 @@ char* score(string a, string b)
     char alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     //update sum1 with the score of player1
-    /* for (int i = 0; i < strlen(a); i++)
-    {
-        }
-
-        n++;
-    } */
-    //iterates through player1 - 27 times
-    for (int j = 0; j < N; j++)
+    for (int i = 0; i < strlen(a); i++)
     {
         a[n]=  toupper(a[n]);
 
-        //determines the index of character 'n' relative to alphabet
-        if (alphabet[j] == a[n])
+        //iterates through player1 27 times
+        for (int j = 0; j < N; j++)
         {
-            sum1 += point[j];
+        //determines the index of character 'n' relative to alphabet
+            if (alphabet[j] == a[n])
+            {
+                sum1 += point[j];
+            }
         }
+            n++;
+    }
 
         n++;
     }

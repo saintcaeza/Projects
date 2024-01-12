@@ -36,6 +36,7 @@ char* score(string a, string b)
             //determines the index of character 'n' relative to alphabet
             if (alphabet[j] == a[n])
             {
+                printf("%s", a)
                 sum1 += point[j];
             }
         }
@@ -54,6 +55,7 @@ char* score(string a, string b)
             //determines the index of character 'n' relative to alphabet
             if (alphabet[j] == b[n])
             {
+                printf("%s", b)
                 sum2 += point[j];
             }
         }

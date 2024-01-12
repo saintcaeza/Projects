@@ -1,22 +1,30 @@
 // Program calculates the approximate level required to read some text
 #include <cs50.h>
 #include <ctype.h>
+#include <stdio.h>
+#include <string.h>
 
-int calculate_grade(string text):
+char *coleman(string a);
 
 int main(void)
 {
-    string text = (get_string"Input sample text: \n");
+    string text = get_string("Input sample text: \n");
+
+    char *pointer = coleman(text);
+    printf("%s\n", pointer);
 }
 
-int calculate_grade(string text)
+char *coleman(string a)
 {
     int word = 0;
     int L = 0;
     int S = 0;
+    int index = 0;
 
-    // identify set of 100 words
-    for (int i = 0; i < strlen(text); i++)
+    char *grade = "No Grade yet. \n";
+
+    // iterates through text
+    for (int i = 0; i < strlen(a[i]); i++)
     {
         // identifies 100 blank spaces (words)
         if (isspace(text[i]))
@@ -24,34 +32,39 @@ int calculate_grade(string text)
             word++;
 
             // iterates through the first 100 words of text
-            for (int j = 0; word = 100 : j < text[i]; j++)
+            for (int j = 0; j < a[i]; j++)
             {
-                // find L, where L is the average number of letters per 100 words in the text
-                if (isalpha(text[j]))
+                if (word == 100)
                 {
-                    L++;
-                }
-                if (ispunct(text[j]))
-                {
-                    S++;
+                    // find L, where L is the average number of letters per 100 words in the text
+                    if (isalpha(text[j]))
+                    {
+                        L++;
+                    }
+                    // find number of sentences per 100 words
+                    if (ispunct(text[j]))
+                    {
+                        S++;
+                    }
                 }
             }
         }
     }
 
-    int coleman_index(int L, int S)
+    index = 0.0588 * L - 0.296 * S - 15.8
+
+    if (index >= 16)
     {
-        
+        grade = "Grade 16+";
+    }
+    else if (index > 1)
+    {
+        grade = "Grade %i\n", index;
+    }
+    else if (index <= 1)
+    {
+        grade = "Before Grade 1";
     }
 
-    // use the Coleman-Liau index to calculate the grade requred to read text
-        // index = 0.0588 * L - 0.296 * S - 15.8
-
+    return grade;
 }
-
-
-
-
-
-// program should print as output “Grade X” where “X” is the grade level computed
-

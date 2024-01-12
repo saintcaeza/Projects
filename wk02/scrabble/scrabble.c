@@ -28,7 +28,7 @@ char* score(string a, string b)
     //update sum1 with the score of player1
     for (int i = 0; i < strlen(a); i++)
     {
-        a[n]=  toupper(a[n]);
+        a[n] = toupper(a[n]);
 
         //iterates through player1 27 times
         for (int j = 0; j < N; j++)
@@ -39,8 +39,6 @@ char* score(string a, string b)
                 sum1 += point[j];
             }
         }
-            n++;
-    }
 
         n++;
     }
@@ -48,15 +46,14 @@ char* score(string a, string b)
     //update sum2 with the score of player2
     for (int i = 0; i < strlen(b); i++)
     {
-        b[n] =  toupper(b[n]);
+        b[n] = toupper(b[n]);
 
-        //iterates through player2 - 27 times
+        //iterates through player2 27 times
         for (int j = 0; j < N; j++)
         {
             //determines the index of character 'n' relative to alphabet
             if (alphabet[j] == b[n])
             {
-                printf("%s\n", b);
                 sum2 += point[j];
             }
         }

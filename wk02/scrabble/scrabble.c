@@ -36,7 +36,7 @@ char* score(string a, string b)
     for (int j = 0; j < N; j++)
     {
         a[n]=  toupper(a[n]);
-        char k = alphabet[j]
+        char k = alphabet[j];
 
         //determines the index of character 'n' relative to alphabet
         if (k == a[n])

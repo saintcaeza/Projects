@@ -36,12 +36,10 @@ char* score(string a, string b)
     for (int j = 0; j < N; j++)
     {
         a[n]=  toupper(a[n]);
-        char k = alphabet[j];
 
         //determines the index of character 'n' relative to alphabet
-        if (k == a[n])
+        if (alphabet[j] == a[n])
         {
-            printf("%s\n", a);
             sum1 += point[j];
         }
 

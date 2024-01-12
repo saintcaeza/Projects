@@ -18,7 +18,6 @@ int main(void)
 
 char* score(string a, string b)
 {
-    int n = 0;
     int sum1 = 0;
     int sum2 = 0;
 
@@ -35,6 +34,8 @@ char* score(string a, string b)
     //iterates through player1 - 27 times
     for (int j = 0; j < N; j++)
     {
+        int n = 0;
+
         a[n]=  toupper(a[n]);
 
         //determines the index of character 'n' relative to alphabet
@@ -57,6 +58,7 @@ char* score(string a, string b)
     } */
     for (int j = 0; j < N; j++)
     {
+        int n = 0;
         b[n] =  toupper(b[n]);
 
         //determines the index of character 'n' relative to alphabet
@@ -65,7 +67,7 @@ char* score(string a, string b)
             printf("%s\n", b);
             sum2 += point[j];
         }
-        
+
         n++;
     }
 

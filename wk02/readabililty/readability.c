@@ -11,6 +11,8 @@ int main(void)
 
 int calculate_grade(string text)
 {
+    int word = 0;
+    
     // identify sets of 100 words
     for (int i = 0; i < strlen(text); i++)
     {
@@ -18,7 +20,7 @@ int calculate_grade(string text)
         if (isblank(text[i]))
         {
             word++
-            for (int j = 0; j )
+            for (int j = 0; word = 101 : j < text[i])
         }
         // find L, where L is the average number of letters per 100 words in the text
 

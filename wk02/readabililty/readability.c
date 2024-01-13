@@ -27,7 +27,7 @@ char *coleman(string a)
     {
 
     }
-    while()
+    while(a[i])
 
     // iterates through text
     for (int i = 0; i < strlen(a); i++)

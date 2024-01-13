@@ -42,7 +42,7 @@ char *coleman(string a)
                         L++;
                     }
                     // find number of sentences per 100 words
-                    if (ispunct(a[j]))
+                    if (ispunct(a[j]) && isspace(a[j+1]))
                     {
                         S++;
                     }
@@ -51,8 +51,10 @@ char *coleman(string a)
         }
     }
 
+    L = (L / word) * 100;
+    S = (S / word) * 100;
+
     index = 0.0588 * L - 0.296 * S - 15.8;
-    printf("%i", index);
 
     if (index >= 16)
     {

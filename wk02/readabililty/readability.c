@@ -27,7 +27,7 @@ char *coleman(string a)
 
     do
     {
-        if (isspace(a[p]) || isspace(a[d]))
+        if (isspace(a[p]) || isspace(a[d - 1]))
         {
             word++;
         }

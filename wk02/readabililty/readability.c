@@ -31,11 +31,13 @@ char *coleman(string a)
         {
             word++;
 
-            // iterates through the first 100 words of text
+            if (word == 100)
+            {
+
+                // iterates through the first 100 words of text
             for (int j = 0; j < a[i]; j++)
             {
-                if (word == 100)
-                {
+
                     // find L, where L is the average number of letters per 100 words in the text
                     if (isalpha(a[j]))
                     {

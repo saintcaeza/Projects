@@ -50,7 +50,6 @@ char *coleman(string a)
             S++;
         }
     }
-}
 
     L = (L / word) * 100;
     S = (S / word) * 100;

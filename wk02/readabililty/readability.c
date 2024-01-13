@@ -23,6 +23,12 @@ char *coleman(string a)
 
     char *grade = "No Grade yet. \n";
 
+    do
+    {
+
+    }
+    while()
+
     // iterates through text
     for (int i = 0; i < strlen(a); i++)
     {

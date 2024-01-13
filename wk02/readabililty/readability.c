@@ -36,6 +36,11 @@ char *coleman(string a)
     }
     while(p < d - 1);
 
+    if (!isspace(a[d - 1]))
+    {
+        word++;
+    }
+
     // find number of letters and sentences in word
     for (int i = 0; i < word; i++)
     {
@@ -66,7 +71,7 @@ char *coleman(string a)
     }
     else if (index <= 1)
     {
-        grade = "Before Grade \n";
+        grade = "Before Grade 1\n";
     }
 
     return grade;

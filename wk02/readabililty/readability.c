@@ -35,6 +35,21 @@ char *coleman(string a)
     }
     while(a[i] < d);
 
+    // find number of letters in word
+    for (int i = 0; i < a[i]; i++)
+    {
+        // find L, where L is the average number of letters per 100 words in the text
+        if (isalpha(a[j]))
+        {
+            L++;
+        }
+        // find number of sentences per 100 words
+        if (ispunct(a[j]) && isspace(a[j+1]))
+        {
+            S++;
+        }
+
+
     // iterates through text
     for (int i = 0; i < strlen(a); i++)
     {
@@ -43,18 +58,7 @@ char *coleman(string a)
             if (word == 100)
             {
                 // iterates through the first 100 words of text
-                for (int j = 0; j < a[i]; j++)
-                {
-                    // find L, where L is the average number of letters per 100 words in the text
-                    if (isalpha(a[j]))
-                    {
-                        L++;
-                    }
-                    // find number of sentences per 100 words
-                    if (ispunct(a[j]) && isspace(a[j+1]))
-                    {
-                        S++;
-                    }
+
                 }
             }
         }

@@ -27,14 +27,14 @@ char *coleman(string a)
 
     do
     {
-        if (isspace(a[p]) || isspace(a[d - 1]))
+        if (isspace(a[p]))
         {
             word++;
         }
 
         p++;
     }
-    while(p < d);
+    while(p < d - 1);
 
     // find number of letters and sentences in word
     for (int i = 0; i < word; i++)

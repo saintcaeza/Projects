@@ -66,7 +66,7 @@ char *coleman(string a)
     }
     else if (index <= 1)
     {
-        grade = "Before Grade 1\n";
+        grade = "Before Grade \n";
     }
 
     return grade;

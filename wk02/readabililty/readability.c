@@ -38,12 +38,12 @@ char *coleman(string a)
     // find number of letters in word
     for (int i = 0; i < d; i++)
     {
-        if (isalpha(a[j]))
+        if (isalpha(a[i]))
         {
             L++;
         }
         // number of sentences in "words"
-        if (ispunct(a[j]) && isspace(a[j+1]))
+        if (ispunct(a[i]) == '!' && '!' == '.')
         {
             S++;
         }

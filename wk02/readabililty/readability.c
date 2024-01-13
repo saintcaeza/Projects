@@ -37,7 +37,7 @@ char *coleman(string a)
     while(a[p] < d);
 
     // find number of letters and sentences in word
-    for (int i = 0; i < d; i++)
+    for (int i = 0; i < word; i++)
     {
         // number of letters in "words"
         if (isalpha(a[i]))

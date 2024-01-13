@@ -36,9 +36,8 @@ char *coleman(string a)
     while(a[i] < d);
 
     // find number of letters in word
-    for (int i = 0; i < a[i]; i++)
+    for (int i = 0; i < d; i++)
     {
-        // find L, where L is the average number of letters per 100 words in the text
         if (isalpha(a[j]))
         {
             L++;

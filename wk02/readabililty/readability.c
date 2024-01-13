@@ -45,7 +45,10 @@ char *coleman(string a)
             L++;
         }
         // number of sentences in "words"
-         c
+        if (a[i] == '!' || a[i] == '.' || a[i] == ',' || a[i] == '?')
+        {
+            S++;
+        }
     }
 }
 

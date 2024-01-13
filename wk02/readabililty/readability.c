@@ -42,7 +42,7 @@ char *coleman(string a)
         {
             L++;
         }
-        // find number of sentences per 100 words
+        // number of sentences in "words"
         if (ispunct(a[j]) && isspace(a[j+1]))
         {
             S++;

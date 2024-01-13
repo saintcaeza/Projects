@@ -19,8 +19,8 @@ char *coleman(string a)
     int p = 0;
     int d = strlen(a);
     int word = 0;
-    int L = 0;
-    int S = 0;
+    float L = 0;
+    float S = 0;
     int index = 0;
 
     char *grade = "No Grade yet. \n";
@@ -72,5 +72,3 @@ char *coleman(string a)
 
     return grade;
 }
-/*char grade[50]; // make sure it's large enough
-sprintf(grade, "Grade %i\n", index); */

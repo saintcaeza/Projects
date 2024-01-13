@@ -48,21 +48,8 @@ char *coleman(string a)
         {
             S++;
         }
-
-
-    // iterates through text
-    for (int i = 0; i < strlen(a); i++)
-    {
-        // identifies 100 blank spaces (words)
-
-            if (word == 100)
-            {
-                // iterates through the first 100 words of text
-
-                }
-            }
-        }
     }
+}
 
     L = (L / word) * 100;
     S = (S / word) * 100;

@@ -43,7 +43,7 @@ char *coleman(string a)
             L++;
         }
         // number of sentences in "words"
-        if (ispunct(a[i]) == '!' && '!' == '.')
+        if (ispunct(a[i]) == '!' || '.' || ',' || )
         {
             S++;
         }

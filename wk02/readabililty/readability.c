@@ -16,6 +16,7 @@ int main(void)
 
 char *coleman(string a)
 {
+    int p = 0;
     int d = strlen(a);
     int word = 0;
     int L = 0;
@@ -26,14 +27,14 @@ char *coleman(string a)
 
     do
     {
-        if (isspace(a[i]))
+        if (isspace(a[p]))
         {
             word++;
         }
 
-        i++
+        p++;
     }
-    while(a[i] < d);
+    while(a[p] < d);
 
     // find number of letters and sentences in word
     for (int i = 0; i < d; i++)
@@ -44,10 +45,7 @@ char *coleman(string a)
             L++;
         }
         // number of sentences in "words"
-        if (ispunct(a[i]) == '!' || '.' || ',' || '?')
-        {
-            S++;
-        }
+         c
     }
 }
 

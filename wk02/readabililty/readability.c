@@ -16,6 +16,7 @@ int main(void)
 
 char *coleman(string a)
 {
+    int d = strlen(a);
     int word = 0;
     int L = 0;
     int S = 0;
@@ -25,17 +26,19 @@ char *coleman(string a)
 
     do
     {
+        if (isspace(a[i]))
+        {
+            word++;
+        }
 
+        i++
     }
-    while(a[i])
+    while(a[i] < d);
 
     // iterates through text
     for (int i = 0; i < strlen(a); i++)
     {
         // identifies 100 blank spaces (words)
-        if (isspace(a[i]))
-        {
-            word++;
 
             if (word == 100)
             {

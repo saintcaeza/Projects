@@ -32,8 +32,9 @@ char *coleman(string a)
         {
             word++;
         }
-         // number of sentences in "words"
-        if (a[i] == '!' || a[i] == '.' || a[i] == ',' || a[i] == '?')
+
+        // number of sentences in "words"
+        if (a[p - 1] == '!' || a[p - 1] == '.' || a[p - 1] == ',' || a[p - 1] == '?')
         {
             S++;
         }

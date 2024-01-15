@@ -25,18 +25,18 @@ char *coleman(string a)
     int index = 0;
     char *grade = "No Grade yet. \n";
 
-    // find number of words in text
+    // find number of words and sentencesin text
     do
     {
         if (isspace(a[p]))
         {
             word++;
-        }
 
-        // number of sentences in "words"
-        if (a[p - 1] == '!' || a[p - 1] == '.' || a[p - 1] == ',' || a[p - 1] == '?')
-        {
-            S++;
+            if (a[p - 1] == '!' || a[p - 1] == '.' || a[p - 1] == ',' || a[p - 1] == '?')
+            {
+                S++;
+            }
+
         }
 
         p++;

@@ -57,11 +57,7 @@ char *coleman(string a)
             i++;
         }
     }
-    for (int j = 0; j <= word; j++)
-    {
-
-    }
-
+    
     L = (L / word) * 100;
     S = (S / word) * 100;
 

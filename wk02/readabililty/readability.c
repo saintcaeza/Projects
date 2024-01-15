@@ -11,9 +11,10 @@ int main(void)
     string text = get_string("Input sample text: ");
 
     char *pointer = coleman(text);
-    printf("%s\n", pointer);
+    printf("%c\n", pointer);
 }
 
+// find the reading grade required to read the given text using the
 char *coleman(string a)
 {
     int p = 0;
@@ -22,7 +23,6 @@ char *coleman(string a)
     float L = 0;
     float S = 0;
     int index = 0;
-
     char *grade = "No Grade yet. \n";
 
     do

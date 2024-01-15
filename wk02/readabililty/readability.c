@@ -43,7 +43,7 @@ char *coleman(string a)
     }
 
     // find number of letters and sentences in word
-    for (int i = 0; i < word; i++)
+    for (int i = 0; i <= word ; i++)
     {
         // number of letters in "words"
         if (isalpha(a[i]))
@@ -77,4 +77,4 @@ char *coleman(string a)
 
     return grade;
 }
-    // In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since....
+    // In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.... expecting 23 spaces

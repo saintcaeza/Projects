@@ -53,11 +53,6 @@ char *coleman(string a)
         if (isalpha(a[i]))
         {
             L++;
-            i++;
-        }
-        else
-        {
-            i++;
         }
     }
 

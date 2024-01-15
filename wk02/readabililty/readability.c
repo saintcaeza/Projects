@@ -14,7 +14,7 @@ int main(void)
     printf("%c\n", pointer);
 }
 
-// find the reading grade required to read the given text using the
+// find the coleman index of the string
 char *coleman(string a)
 {
     int p = 0;
@@ -25,6 +25,7 @@ char *coleman(string a)
     int index = 0;
     char *grade = "No Grade yet. \n";
 
+    // 
     do
     {
         if (isspace(a[p]))

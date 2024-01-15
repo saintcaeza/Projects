@@ -77,3 +77,4 @@ char *coleman(string a)
 
     return grade;
 }
+    // In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since....

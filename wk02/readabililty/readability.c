@@ -25,7 +25,7 @@ char *coleman(string a)
     int index = 0;
     char *grade = "No Grade yet. \n";
 
-    // 
+    // find number of words in text
     do
     {
         if (isspace(a[p]))

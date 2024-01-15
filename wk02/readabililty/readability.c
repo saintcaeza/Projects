@@ -36,7 +36,6 @@ char *coleman(string a)
             {
                 S++;
             }
-
         }
 
         p++;

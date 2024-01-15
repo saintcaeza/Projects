@@ -47,17 +47,16 @@ char *coleman(string a)
         word++;
     }
 
-    // find number of letters and sentences in word
+    // number of letters in words word
     for (int i = 0; i <= word ; i++)
     {
-        // number of letters in "words"
         if (isalpha(a[i]))
         {
             L++;
             i++;
         }
     }
-    
+
     L = (L / word) * 100;
     S = (S / word) * 100;
 

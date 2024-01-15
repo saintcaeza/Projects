@@ -48,10 +48,12 @@ char *coleman(string a)
         // number of letters in "words"
         if (isalpha(a[i]))
         {
-            i++
-            // problem is it checked kept checking for an alphabet without increasing i
             L++;
+            i++;
         }
+    }
+    for (int j = 0; j <= word; j++)
+    {
         // number of sentences in "words"
         if (a[i] == '!' || a[i] == '.' || a[i] == ',' || a[i] == '?')
         {

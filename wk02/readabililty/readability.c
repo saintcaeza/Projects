@@ -48,6 +48,8 @@ char *coleman(string a)
         // number of letters in "words"
         if (isalpha(a[i]))
         {
+            i++
+            // problem is it checked kept checking for an alphabet without increasing i
             L++;
         }
         // number of sentences in "words"

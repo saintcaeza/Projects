@@ -6,8 +6,7 @@
 
 char *coleman(string a);
 
-int main(void)
-{
+int main(void) {
     string text = get_string("Input sample text: ");
 
     char *pointer = coleman(text);
@@ -15,8 +14,7 @@ int main(void)
 }
 
 // find the coleman index of the string
-char *coleman(string a)
-{
+char *coleman(string a) {
     int p = 0;
     int d = strlen(a);
     int word = 0;
@@ -25,15 +23,15 @@ char *coleman(string a)
     int index = 0;
     char *grade = "No Grade yet. \n";
 
-    // find number of words and sentencesin text
-    do
-    {
-        if (isspace(a[p]))
-        {
+    // find number of words, letters and sentencesin text
+    do {
+        if (isalpha(a[p]) {
+            L++;
+        }
+        else if (isspace(a[p])) {
             word++;
 
-            if (a[p - 1] == '!' || a[p - 1] == '.' || a[p - 1] == ',' || a[p - 1] == '?')
-            {
+            if (ispunct(a[p-1]) {
                 S++;
             }
         }
@@ -42,18 +40,8 @@ char *coleman(string a)
     }
     while(p < d - 1);
 
-    if (!isspace(a[d - 1]))
-    {
+    if (!isspace(a[d - 1])) {
         word++;
-    }
-
-    // number of letters in words word
-    for (int i = 0; i <= word ; i++)
-    {
-        if (isalpha(a[i]))
-        {
-            L++;
-        }
     }
 
     L = (L / word) * 100;
@@ -61,19 +49,17 @@ char *coleman(string a)
 
     index = 0.0588 * L - 0.296 * S - 15.8;
 
-    if (index >= 16)
-    {
+    if (index >= 16) {
         grade = "Grade 16+\n";
     }
-    else if (index > 1)
-    {
+    else if (index > 1) {
         printf("Grade %i\n", index);
     }
-    else if (index <= 1)
-    {
+    else if (index <= 1) {
         grade = "Before Grade 1\n";
     }
 
     return grade;
 }
     // In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.... expecting 23 spaces
+    // a[p - 1] == '!' || a[p - 1] == '.' || a[p - 1] == ',' || a[p - 1] == '?') 

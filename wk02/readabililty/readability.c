@@ -32,6 +32,11 @@ char *coleman(string a)
         {
             word++;
         }
+         // number of sentences in "words"
+        if (a[i] == '!' || a[i] == '.' || a[i] == ',' || a[i] == '?')
+        {
+            S++;
+        }
 
         p++;
     }
@@ -54,11 +59,7 @@ char *coleman(string a)
     }
     for (int j = 0; j <= word; j++)
     {
-        // number of sentences in "words"
-        if (a[i] == '!' || a[i] == '.' || a[i] == ',' || a[i] == '?')
-        {
-            S++;
-        }
+
     }
 
     L = (L / word) * 100;

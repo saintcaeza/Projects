@@ -11,7 +11,7 @@ int main(void)
     string text = get_string("Input sample text: ");
 
     char *pointer = coleman(text);
-    printf("%c\n", pointer);
+    printf("%s\n", pointer);
 }
 
 // find the coleman index of the string

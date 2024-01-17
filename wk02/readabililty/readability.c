@@ -1,65 +1,53 @@
-// Program calculates the approximate level required to read some text
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <math.h>
 
-char *coleman(string a);
+void coleman(string a);
 
 int main(void) {
     string text = get_string("Input sample text: ");
 
-    char *pointer = coleman(text);
-    printf("%s\n", pointer);
+    coleman(text);
 }
 
-// find the coleman index of the string
-char *coleman(string a) {
-    int p = 0;
-    int d = strlen(a);
-    int word = 0;
-    float L = 0;
-    float S = 0;
-    int index = 0;
-    char *grade = "No Grade yet. \n";
+void coleman(string a) { // find the coleman index of the string
+    int p = 0, word = 0, d = strlen(a);
+    float L = 0, S = 0, index = 0;
+    char *grade = "No Grade yet.";
 
-    // find number of words, letters and sentencesin text
-    do {
-        if (isalpha(a[p]) {
+    do {  // find number of words, letters and sentences in text
+        if ((isalpha(a[p]))) {
             L++;
-        }
-        else if (isspace(a[p])) {
-            word++;
-
-            if (ispunct(a[p-1]) {
-                S++;
             }
-        }
-
+        if (((isalpha(a[p])) && ((a[p+1] == ' ') || (a[p+1] == '!') || (a[p+1] == '?') || (a[p+1] == '.') || (a[p+1] == ',')))) {
+            word++;
+            }
+        if (((a[p+1] == ' ' || a[p+1] == '\0' || a[p+1] == '"') && ((a[p] == '!') || (a[p] == '?') || (a[p] == '.')))) {
+            S++;
+            }
         p++;
-    }
-    while(p < d - 1);
 
-    if (!isspace(a[d - 1])) {
-        word++;
     }
+    while(p <= d);
 
     L = (L / word) * 100;
     S = (S / word) * 100;
-
-    index = 0.0588 * L - 0.296 * S - 15.8;
+    index = round(0.0588 * L - 0.296 * S - 15.8);
 
     if (index >= 16) {
-        grade = "Grade 16+\n";
+        printf("Grade 16+\n");
     }
     else if (index > 1) {
-        printf("Grade %i\n", index);
+        char *buffer = malloc(20 * sizeof(char));
+        sprintf(buffer, "Grade %f", index);
+        printf("%s\n", buffer);
     }
     else if (index <= 1) {
-        grade = "Before Grade 1\n";
+        printf("Before Grade 1\n");
     }
+    return;
 
-    return grade;
 }
-    // In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.... expecting 23 spaces
-    // a[p - 1] == '!' || a[p - 1] == '.' || a[p - 1] == ',' || a[p - 1] == '?') 

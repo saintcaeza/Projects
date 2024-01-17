@@ -42,7 +42,7 @@ void coleman(string a) { // find the coleman index of the string
     }
     else if (index > 1) {
         char *buffer = malloc(20 * sizeof(char));
-        sprintf(buffer, "Grade %f", index);
+        sprintf(buffer, "Grade %d", index);
         printf("%s\n", buffer);
     }
     else if (index <= 1) {

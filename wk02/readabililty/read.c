@@ -31,14 +31,10 @@ float calculateColemanThingy(const char *text) {
         words++;
     }
 
-    float L = (float)letters / words * 100;
-    float S = (float)sentences / words * 100;
+    float L = (float) letters / words * 100;
+    float S = (float) sentences / words * 100;
 
     float cIndex = 0.0588 * L - 0.296 * S - 15.8;
     return cIndex;
-
-    // char result[128];
-    // sprintf(result, "Words: %d, Letters: %d, Sentences: %d", words, letters, sentences);
-    // printf("%s\n", result);
 }
 

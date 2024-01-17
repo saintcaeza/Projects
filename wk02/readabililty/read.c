@@ -4,14 +4,14 @@
 #include <string.h>
 #include <stdlib.h>
 
-void calculateColemanThingy(const char *text);
+float calculateColemanThingy(const char *text);
 
 int main(void) {
     char* text = get_string(" ");
-    calculateColemanThingy(text);
+    printf(calculateColemanThingy(text));
 }
 
-void calculateColemanThingy(const char *text) {
+float calculateColemanThingy(const char *text) {
     int letters = 0, words = 0, sentences = 0;
     int i = 0;
 
@@ -31,14 +31,14 @@ void calculateColemanThingy(const char *text) {
         words++;
     }
 
-    // float L = (float)letters / words * 100;
-    // float S = (float)sentences / words * 100;
+    float L = (float)letters / words * 100;
+    float S = (float)sentences / words * 100;
 
-    // float cIndex = 0.0588 * L - 0.296 - S - 15.8;
-    // return cIndex;
+    float cIndex = 0.0588 * L - 0.296 - S - 15.8;
+    return cIndex;
 
-    char result[128];
-    sprintf(result, "Words: %d, Letters: %d, Sentences: %d", words, letters, sentences);
-    printf("%s\n", result);
+    // char result[128];
+    // sprintf(result, "Words: %d, Letters: %d, Sentences: %d", words, letters, sentences);
+    // printf("%s\n", result);
 }
 

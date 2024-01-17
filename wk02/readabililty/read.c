@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void printGradeFromIndex(float index);
+void printGradeFromIndex(int index);
 float calculateColemanThingy(const char *text);
 
 int main(void) {
@@ -40,7 +40,7 @@ float calculateColemanThingy(const char *text) {
     return round(cIndex);
 }
 
-void printGradeFromIndex(float index) {
+void printGradeFromIndex(int index) {
     if      (index <=  1) { printf("Before Grade 1\n"); }
     else if (index >= 16) { printf("Grade 16+\n"); }
     else if (index >   1) {

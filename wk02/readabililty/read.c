@@ -8,7 +8,7 @@ float calculateColemanThingy(const char *text);
 
 int main(void) {
     char* text = get_string(" ");
-    printf(calculateColemanThingy(text));
+    printf("%.6f", calculateColemanThingy(text));
 }
 
 float calculateColemanThingy(const char *text) {

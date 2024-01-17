@@ -34,7 +34,7 @@ float calculateColemanThingy(const char *text) {
     float L = (float)letters / words * 100;
     float S = (float)sentences / words * 100;
 
-    float cIndex = 0.0588 * L - 0.296 - S - 15.8;
+    float cIndex = 0.0588 * L - 0.296 * S - 15.8;
     return cIndex;
 
     // char result[128];

@@ -38,3 +38,13 @@ float calculateColemanThingy(const char *text) {
     return cIndex;
 }
 
+char* getGradeFromIndex(float index) {
+    if      (index <=  1) { printf("Before Grade 1\n"); }
+    else if (index >= 16) { printf("Grade 16+\n"); }
+    else if (index >   1) {
+        char *buffer = malloc(20 * sizeof(char));
+        sprintf(buffer, "Grade %d", index);
+        printf("%s\n", buffer);
+    }
+}
+

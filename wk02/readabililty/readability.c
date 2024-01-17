@@ -2,51 +2,60 @@
 #include <ctype.h>
 #include <math.h>
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
-void printGradeFromIndex(int index);
-float calculateColemanThingy(const char *text);
+void coleman(string a);
 
-int main(void) {
-    char* text = get_string(" ");
-    printGradeFromIndex(calculateColemanThingy(text));
-    // printf("The coleman thingy is %10.6lf \n", calculateColemanThingy(text));
+int main(void)
+{
+    string text = get_string("Input sample text: ");
+
+    coleman(text);
 }
 
-float calculateColemanThingy(const char *text) {
-    int letters = 0, words = 0, sentences = 0;
-    int i = 0;
+void coleman(string a)
+{ // find the coleman index of the string
+    int p = 0, word = 0, index = 0, d = strlen(a);
+    float L = 0, S = 0;
+    char *grade = "No Grade yet.";
 
-    while (text[i] != '\0') {
-        if (isalpha(text[i])) {
-            letters++;
-        } else if (text[i] == ' ') {
-            words++;
-        } else if (text[i] == '.' || text[i] == '!' || text[i] == '?') {
-            sentences++;
+    do
+    { // find number of words, letters and sentences in text
+        if ((isalpha(a[p])))
+        {
+            L++;
         }
-        i++;
+        if (((isalpha(a[p])) &&
+             ((a[p + 1] == ' ') || (a[p + 1] == '!') || (a[p + 1] == '?') || (a[p + 1] == '.') || (a[p + 1] == ','))))
+        {
+            word++;
+        }
+        if (((a[p + 1] == ' ' || a[p + 1] == '\0' || a[p + 1] == '"') && ((a[p] == '!') || (a[p] == '?') || (a[p] == '.'))))
+        {
+            S++;
+        }
+        p++;
     }
+    while (p <= d);
 
-    //  Assuming that the index -1 points to the last character in the array
-    if (i > 0 && text[i - 1] != ' ') {
-        words++;
+    L = (L / word) * 100;
+    S = (S / word) * 100;
+    index = round(0.0588 * L - 0.296 * S - 15.8);
+
+    if (index >= 16)
+    {
+        printf("Grade 16+\n");
     }
-
-    float L = (float) letters / words * 100;
-    float S = (float) sentences / words * 100;
-    int cIndex = 0.0588 * L - 0.296 * S - 15.8;
-    return round(cIndex);
-}
-
-void printGradeFromIndex(int index) {
-    if      (index <=  1) { printf("Before Grade 1\n"); }
-    else if (index >= 16) { printf("Grade 16+\n"); }
-    else if (index >   1) {
+    else if (index > 1)
+    {
         char *buffer = malloc(20 * sizeof(char));
         sprintf(buffer, "Grade %d", index);
         printf("%s\n", buffer);
     }
+    else if (index <= 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    return;
 }
-

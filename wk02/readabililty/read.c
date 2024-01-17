@@ -1,16 +1,16 @@
 #include <cs50.h>
 #include <ctype.h>
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
+void printGradeFromIndex(float index);
 float calculateColemanThingy(const char *text);
 
 int main(void) {
     char* text = get_string(" ");
-    printGradeFromIndex(
-        calculateColemanThingy(text);
-    )
+    printGradeFromIndex(calculateColemanThingy(text));
     // printf("The coleman thingy is %10.6lf \n", calculateColemanThingy(text));
 }
 
@@ -36,11 +36,11 @@ float calculateColemanThingy(const char *text) {
 
     float L = (float) letters / words * 100;
     float S = (float) sentences / words * 100;
-    float cIndex = 0.0588 * L - 0.296 * S - 15.8;
-    return cIndex;
+    int cIndex = 0.0588 * L - 0.296 * S - 15.8;
+    return round(cIndex);
 }
 
-char* printGradeFromIndex(float index) {
+void printGradeFromIndex(float index) {
     if      (index <=  1) { printf("Before Grade 1\n"); }
     else if (index >= 16) { printf("Grade 16+\n"); }
     else if (index >   1) {

@@ -14,8 +14,8 @@ int main(void) {
 }
 
 void coleman(string a) { // find the coleman index of the string
-    int p = 0, word = 0, d = strlen(a);
-    float L = 0, S = 0, index = 0;
+    int p = 0, word = 0, index = 0, d = strlen(a);
+    float L = 0, S = 0;
     char *grade = "No Grade yet.";
 
     do {  // find number of words, letters and sentences in text

@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void countTheCunts(const char *text);
+void calculateColemanThingy(const char *text);
 
 int main(void) {
     char* text = get_string(" ");

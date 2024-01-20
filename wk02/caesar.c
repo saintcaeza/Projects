@@ -3,6 +3,8 @@
 #include <stdlib>
 #include <string.h>
 
+const int keylen = strlen(argv[1]);
+
 char* Encipher(int argc, plaintext);
 
 int main(int argc, int argv[])
@@ -19,9 +21,9 @@ char* Encipher(int argc, plaintext)
     }
     else
     { // makes sure argument containts only digit characters
-        for (int i = 0, n = strlen(plaintext); i < strlen; i++)
+        for (int i = 0; i < keylen; i++)
         {
-            
+            plaintext
         }
     }
     // convert argument to an integer

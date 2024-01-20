@@ -1,6 +1,7 @@
 #include <std.io>
 #include <cs50.h>
 #include <stdlib>
+#include <str.h>
 
 char* Encipher(int argc, plaintext);
 

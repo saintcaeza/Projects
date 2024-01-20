@@ -6,25 +6,25 @@
 
 const int keylen = strlen(argv[1]);
 
-char* Encipher(int argc, plaintext);
+char* Encipher(int argc, int argv[], plaintext);
 
 int main(int argc, int argv[])
 {
     string plaintext = get_string("plaintext: \n")
 }
 
-char* Encipher(int argc, plaintext)
-{ // get key while ensuring it's ensure single command-line
+char* Encipher(int argc, int argv[], plaintext)
+{ // get key while ensuring single command-line argument
     if (argc > 1)
     {
         printf("Usage: ./caesar key");
         return;
     }
     else
-    { // makes sure argument containts only digit characters
+    { // check if key is valid
         for (int i = 0; i < keylen; i++)
         {
-            if (!isdigit())
+            if (!isdigit(argv[n]))
         }
     }
     // convert argument to an integer

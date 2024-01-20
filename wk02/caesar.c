@@ -12,8 +12,15 @@ int main(int argc, int arg[v])
 char* Encipher(int argc, plaintext)
 {
     // get key
-    // ensure single command-line argument
-    // make sure argument containts only digit characters
+    // ensure single command-line
+    if (argc < 2)
+    {
+        printf("nice!")
+    }
+    else
+    {
+        printf("Usage: ./caesar key")
+    }// make sure argument containts only digit characters
     // convert argument to an integer
 }
 

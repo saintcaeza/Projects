@@ -24,7 +24,7 @@ void get_key(int argc, char *argv[], int keylen)
         {
             if (isdigit(argv[i]))
             {
-                key = atoi(argv[i]);
+                
             }
         }
     }

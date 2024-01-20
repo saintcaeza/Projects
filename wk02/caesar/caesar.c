@@ -24,7 +24,11 @@ void get_key(int argc, char *argv[], int keylen)
         {
             if (isdigit(argv[i]))
             {
-                
+
+            }
+            else
+            {
+                printf("Usage: ./caesar key");
             }
         }
     }

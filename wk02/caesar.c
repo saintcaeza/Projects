@@ -15,24 +15,23 @@ int main(int argc, int argv[])
 }
 
 void get_key(int argc, int argv[])
-{ // get key while ensuring single command-line argument
-    if (argc > 1)
+{ // check if key is valid, convert argument to integer
+    if (argc < 1)
     {
-        printf("Usage: ./caesar key");
-        return;
-    }
-    else
-    { // check if key is valid
         for (int i = 0; i < keylen; i++)
         {
-            if (isdigit(argv[n]))
+            if (isdigit(argv[i]))
             {
-                key = atoi(argv[n]);
+                key = atoi(argv[i]);
             }
-
         }
     }
-    // convert argument to an integer
+    else
+    {
+        printf("Usage: ./caesar key");
+    }
+
+
 }
 
 //  Get plaintext

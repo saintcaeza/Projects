@@ -4,7 +4,7 @@
 
 char* Encipher(int argc, plaintext);
 
-int main(int argc, int arg[v])
+int main(int argc, int argv[])
 {
     string plaintext = get_string("plaintext: \n")
 }
@@ -13,13 +13,13 @@ char* Encipher(int argc, plaintext)
 {
     // get key
     // ensure single command-line
-    if (argc < 2)
+    if (argc > 1)
     {
-        printf("nice!")
+        printf("Usage: ./caesar key")
     }
     else
     {
-        printf("Usage: ./caesar key")
+
     }// make sure argument containts only digit characters
     // convert argument to an integer
 }

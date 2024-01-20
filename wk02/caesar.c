@@ -23,7 +23,7 @@ char* Encipher(int argc, plaintext)
     { // makes sure argument containts only digit characters
         for (int i = 0; i < keylen; i++)
         {
-            plaintext
+            if (arg)
         }
     }
     // convert argument to an integer

@@ -15,7 +15,8 @@ char* Encipher(int argc, plaintext)
     // ensure single command-line
     if (argc > 1)
     {
-        printf("Usage: ./caesar key")
+        printf("Usage: ./caesar key");
+        return;
     }
     else
     {

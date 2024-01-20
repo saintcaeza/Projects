@@ -4,18 +4,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-const int keylen = strlen(argv[1]);
 const int key = 0;
 
-void get_key(int , int argv[]);
+void get_key(int , char *argv[], int keylen);
 
-int main(int argc, int argv[])
+int main(int argc, char *argv[])
 {
-    get_key(argc, argv);
-    string plaintext = get_string("plaintext: \n")
+    const int keylen = strlen(argv[1]);
+
+    get_key(argc, argv, keylen);
+    string plaintext = get_string("plaintext: \n");
 }
 
-void get_key(int argc, int argv[])
+void get_key(int argc, char *argv[], int keylen)
 { // check if key is valid, convert argument to integer
     if (argc < 1)
     {

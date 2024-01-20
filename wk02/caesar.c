@@ -19,7 +19,10 @@ char* Encipher(int argc, plaintext)
     }
     else
     { // makes sure argument containts only digit characters
-        for (int i = 0, n; )
+        for (int i = 0, n = strlen(plaintext); i < strlen; i++)
+        {
+            
+        }
     }
     // convert argument to an integer
 }

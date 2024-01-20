@@ -1,5 +1,6 @@
-#include <std.io>
 #include <cs50.h>
+#include <ctype.h>
+#include <std.io>
 #include <stdlib>
 #include <string.h>
 
@@ -23,7 +24,7 @@ char* Encipher(int argc, plaintext)
     { // makes sure argument containts only digit characters
         for (int i = 0; i < keylen; i++)
         {
-            if (arg)
+            if (!isdigit())
         }
     }
     // convert argument to an integer

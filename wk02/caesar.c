@@ -11,6 +11,7 @@ void get_key(int , int argv[]);
 
 int main(int argc, int argv[])
 {
+    get_key(argc, argv);
     string plaintext = get_string("plaintext: \n")
 }
 
@@ -30,8 +31,6 @@ void get_key(int argc, int argv[])
     {
         printf("Usage: ./caesar key");
     }
-
-
 }
 
 //  Get plaintext

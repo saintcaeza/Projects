@@ -33,6 +33,5 @@ void get_key(int argc, int argv[])
     }
 }
 
-//  Get plaintext
 // Encipher
 // print cipher

@@ -5,15 +5,16 @@
 #include <string.h>
 
 const int keylen = strlen(argv[1]);
+const int key = 0;
 
-char* Encipher(int argc, int argv[], plaintext);
+void get_key(int , int argv[]);
 
 int main(int argc, int argv[])
 {
     string plaintext = get_string("plaintext: \n")
 }
 
-char* Encipher(int argc, int argv[], plaintext)
+void get_key(int argc, int argv[])
 { // get key while ensuring single command-line argument
     if (argc > 1)
     {
@@ -24,7 +25,11 @@ char* Encipher(int argc, int argv[], plaintext)
     { // check if key is valid
         for (int i = 0; i < keylen; i++)
         {
-            if (!isdigit(argv[n]))
+            if (isdigit(argv[n]))
+            {
+                key = atoi(argv[n]);
+            }
+
         }
     }
     // convert argument to an integer

@@ -11,7 +11,7 @@ int main(int argc, int arg[v])
 
 char* Encipher(int argc, plaintext)
 {
-    
+    // get key
 }
 
 //  Get plaintext

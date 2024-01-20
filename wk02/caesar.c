@@ -1,7 +1,7 @@
 #include <std.io>
 #include <cs50.h>
 #include <stdlib>
-#include <str.h>
+#include <string.h>
 
 char* Encipher(int argc, plaintext);
 
@@ -19,7 +19,7 @@ char* Encipher(int argc, plaintext)
     }
     else
     { // makes sure argument containts only digit characters
-        for (int i = 0; )
+        for (int i = 0, n; )
     }
     // convert argument to an integer
 }

@@ -14,7 +14,7 @@ int main(int argc, string argv[])
         return 1;
     }
     return 0
-    digit
+    digits (argv[1]);
 
 
 }

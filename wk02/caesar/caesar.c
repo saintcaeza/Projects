@@ -16,12 +16,11 @@ int main(int argc, string argv[])
     return 0
     digits (argv[1]);
 
-
 }
 
 bool digits(string k)
 {
-
+    int len = strlen(string argv1)
 }
 // Encipher
 // print cipher

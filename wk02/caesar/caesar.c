@@ -6,30 +6,26 @@
 
 const int key = 0;
 
-void get_key(int , char *argv[], int keylen);
+void get_key(int , string argv[], int keylen);
 
 int main(int argc, char *argv[])
 {
-    const int keylen = strlen(argv[1]);
-
+    if (argc != 2)
+    {
+        printf("Error: invalid number of command line arguments. Usage: ./caesar key");
+        return 1;
+    }
     get_key(argc, argv, keylen);
     string plaintext = get_string("plaintext: \n");
 }
 
-void get_key(int argc, char *argv[], int keylen)
+void get_key(int argc, string argv[], int keylen)
 { // check if key is valid, convert argument to integer
-    if (argc < 1)
+    if (argc != 2)
     {
-        for (int i = 0; i < keylen; i++)
+        if (argv[2] >= 0 && argv[2] <= 9)
         {
-            if (isdigit(argv[i]))
-            {
-
-            }
-            else
-            {
-                printf("Usage: ./caesar key");
-            }
+            key = atoi(argv[1]);
         }
     }
     else

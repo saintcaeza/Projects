@@ -10,10 +10,11 @@ int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("Error: invalid number of command line arguments. Usage: ./caesar key");
+        printf("Error: invalid number of command line arguments. Usage: ./caesar key\n");
         return 1;
     }
     return 0
+    digit
 
 
 }

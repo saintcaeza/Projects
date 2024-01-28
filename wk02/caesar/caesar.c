@@ -26,8 +26,9 @@ bool digits(string k)
 /*
     TO DO
     - Get Key
-        - G
+        - Get commandlinearg and Key
     - Get plaintext
     - Encipher
+        - shift the position of characters in alphabet by Key position
     - Print ciphertext
 */

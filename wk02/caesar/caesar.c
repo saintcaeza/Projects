@@ -22,5 +22,11 @@ bool digits(string k)
 {
     int len = strlen(string argv1)
 }
-// Encipher
-// print cipher
+
+/*
+    TO DO
+    - Get Key
+    - Get plaintext
+    - Encipher
+    - Print ciphertext
+*/

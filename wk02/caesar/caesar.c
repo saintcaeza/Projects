@@ -26,6 +26,7 @@ bool digits(string k)
 /*
     TO DO
     - Get Key
+        - G
     - Get plaintext
     - Encipher
     - Print ciphertext

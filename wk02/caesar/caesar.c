@@ -27,12 +27,12 @@ void encipher(string k)
     int key;
 
     int index = 0;
-    
+
     string plaintext = (get_string("Input text: "));
 
     int len = strlen(plaintext);
 
-    string ciphertext[len +1];
+    char ciphertext[len +1];
 
     key = atoi(k);
 

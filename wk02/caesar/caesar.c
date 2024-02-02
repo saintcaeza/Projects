@@ -22,7 +22,11 @@ int main(int argc, string argv[])
         printf("Error: invalid key! Input numeric character\n");
         return 1;
     }
-
+for (int i = 0; argv[1][i] != '\0'; i++) {
+    if (!isdigit(argv[1][i])) {
+        printf("Found a non-digit character: %c\n", argv[1][i]);
+    }
+}
 
     encipher(argv[1]);
 

@@ -8,7 +8,7 @@ cont int N = 25;
 char ALPHABET[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 char alphabet[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
-string enciper(string k);
+void enciper(string k);
 
 int main(int argc, string argv[])
 {
@@ -22,15 +22,12 @@ int main(int argc, string argv[])
 
 }
 
-string encipher(string k)
-string encipher(string k)
-string encipher(string k)
-string encipher(string k)
+void encipher(string k)
 {// Encipher
-    string plaintext = (get_string("Input text: "));
-    char* ciphertext[];
     int len = strlen(plaintext);
     int index = 0;
+    string plaintext = (get_string("Input text: "));
+    string ciphertext[len] = '\0';
 
 
     // iterates through the characters of text
@@ -64,7 +61,7 @@ string encipher(string k)
         }
     }
 
-    printf(ciphertext);
+    printf("%s", ciphertext);
 }
 /*
     TO DO

@@ -23,6 +23,9 @@ int main(int argc, string argv[])
 }
 
 string encipher(string k)
+string encipher(string k)
+string encipher(string k)
+string encipher(string k)
 {// Encipher
     string plaintext = (get_string("Input text: "));
     char* ciphertext[];
@@ -60,6 +63,8 @@ string encipher(string k)
             }
         }
     }
+
+    printf(ciphertext);
 }
 /*
     TO DO

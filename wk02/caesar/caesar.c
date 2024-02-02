@@ -8,7 +8,7 @@ const int N = 25;
 char ALPHABET[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 char alphabet[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
-void encipher(string key);
+void encipher(string k);
 
 int main(int argc, string argv[])
 {
@@ -22,12 +22,19 @@ int main(int argc, string argv[])
 
 }
 
-void encipher(string key)
+void encipher(string k)
 {// Encipher
-    string plaintext = (get_string("Input text: "));
-    int len = strlen(plaintext);
-    string ciphertext[len +1];
+    int key;
+
     int index = 0;
+    
+    string plaintext = (get_string("Input text: "));
+
+    int len = strlen(plaintext);
+
+    string ciphertext[len +1];
+
+    key = atoi(k);
 
     // iterates through the characters of text
     for (int i = 0; i < len; i++)

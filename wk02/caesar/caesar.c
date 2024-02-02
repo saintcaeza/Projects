@@ -17,16 +17,15 @@ int main(int argc, string argv[])
         printf("Error: invalid number of command line arguments. Usage: ./caesar key\n");
         return 1;
     }
-    else if (!isdigit(argv[1]))
+
+    for (int i = 0; argv[1][i] != '\0'; i++)
     {
-        printf("Error: invalid key! Input numeric character\n");
-        return 1;
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Error: invalid key! Input numeric character\n");
+            return 1;
+        }
     }
-for (int i = 0; argv[1][i] != '\0'; i++) {
-    if (!isdigit(argv[1][i])) {
-        printf("Found a non-digit character: %c\n", argv[1][i]);
-    }
-}
 
     encipher(argv[1]);
 
@@ -44,11 +43,6 @@ void encipher(string k)
 
     char ciphertext[len +1];
 
-    if (!isdigit(k))
-    {
-        printf("")
-        return 0;
-    }
     key = atoi(k);
 
     // iterates through the characters of text

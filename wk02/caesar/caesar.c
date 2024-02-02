@@ -17,6 +17,7 @@ int main(int argc, string argv[])
         printf("Error: invalid number of command line arguments. Usage: ./caesar key\n");
         return 1;
     }
+    else if (argv)
 
     encipher(argv[1]);
 
@@ -34,7 +35,11 @@ void encipher(string k)
 
     char ciphertext[len +1];
 
-    if (k)
+    if (!isdigit(k))
+    {
+        printf("")
+        return 0;
+    }
     key = atoi(k);
 
     // iterates through the characters of text

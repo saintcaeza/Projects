@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-cont int N = 25;
+const int N = 25;
 char ALPHABET[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 char alphabet[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
-void enciper(string k);
+void encipher(string key);
 
 int main(int argc, string argv[])
 {
@@ -22,13 +22,12 @@ int main(int argc, string argv[])
 
 }
 
-void encipher(string k)
+void encipher(string key)
 {// Encipher
-    int len = strlen(plaintext);
-    int index = 0;
     string plaintext = (get_string("Input text: "));
+    int len = strlen(plaintext);
     string ciphertext[len +1];
-
+    int index = 0;
 
     // iterates through the characters of text
     for (int i = 0; i < len; i++)
@@ -37,10 +36,9 @@ void encipher(string k)
         {
             for (int j = 0; j < N; j++)
             {
-                if ((alphbet[j] || Alphabet[j]) == plaintext[i])
+                if ((alphabet[j] || ALPHABET[j]) == plaintext[i])
                 { // find's the alphabetical index of a character in text
                     index += j;
-                    return index;
                 }
             }
 

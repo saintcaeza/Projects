@@ -34,6 +34,7 @@ void encipher(string k)
 
     char ciphertext[len +1];
 
+    if (k)
     key = atoi(k);
 
     // iterates through the characters of text

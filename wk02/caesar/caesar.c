@@ -17,7 +17,12 @@ int main(int argc, string argv[])
         printf("Error: invalid number of command line arguments. Usage: ./caesar key\n");
         return 1;
     }
-    else if (argv)
+    else if (!isdigit(argv[1]))
+    {
+        printf("Error: invalid key! Input numeric character\n");
+        return 1;
+    }
+
 
     encipher(argv[1]);
 

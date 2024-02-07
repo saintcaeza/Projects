@@ -14,7 +14,7 @@ int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("Error: invalid number of command line arguments. Usage: ./caesar key\n. %d", argc);
+        printf("Error: invalid number of command line arguments. Usage: ./caesar key\n.");
     }
 
     for (int i = 0; argv[1][i] != '\0'; i++)

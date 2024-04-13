@@ -4,10 +4,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-const int N = 25;
-char ALPHABET[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-char alphabet[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-
 void cipher(int k);
 
 int main(int argc, char *argv[])
@@ -35,10 +31,13 @@ int main(int argc, char *argv[])
 
 void cipher(int k, string p)
 {
-    // encipher plaintext using caesar's equation
-    for (int i = 0; i < strlen(p); i++)
+    // convert plaintext to cyphertext
+    for (int i = 0; p[i] < strlen(p); i++)
     {
-        
+        if (isalpha(p[i]))
+        {
+            string c = p[i] + k;
+        }
     }
-    string c =
+
 }

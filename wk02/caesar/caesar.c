@@ -10,10 +10,10 @@ char alphabet[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', '
 
 void cipher(string p);
 
-int main(int argc, string argv[])
+int main(int argc, char *argv[])
 {
     int k = argv[1];
-    
+
     # Accepts a single command line argument
     if (argc != 2)
     {

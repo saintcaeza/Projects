@@ -32,4 +32,4 @@ int main(int argc, string argv[])
 }
 
 #pseudocode
-#1. 
+#1. Accept a single command line, a non-negative integer 

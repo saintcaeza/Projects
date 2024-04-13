@@ -19,7 +19,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    for (int i = 0; argv[1][i] != '\0'; i++)
+    for (int i = 0; argv[1][i]; i++)
     {
         if (!isdigit(argv[1][i]))
         {

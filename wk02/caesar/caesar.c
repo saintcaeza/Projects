@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    int k = argv[1];
+    int k = argv[1] % 25;
 
     cipher(argv[1]);
 

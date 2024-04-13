@@ -12,14 +12,14 @@ void cipher(int k);
 
 int main(int argc, char *argv[])
 {
-    # Accept a single command line argument
+    // accept a single command line argument
     if (argc != 2)
     {
         printf("Error: invalid number of command-line arguments. Usage: ./caesar key\n.");
         return 1;
     }
 
-    # command-line argument must be a decimal number
+    // command-line argument must be a decimal number
     if ((!isdigit(argv[1])) || (argv[1] < 0))
     {
         printf("Usage: ./caesar key\n");
@@ -28,11 +28,17 @@ int main(int argc, char *argv[])
 
     int k = argv[1] % 25;
 
-    cipher(int k);
+    string plaintext = get_string("plaintext:  ");
+
+    cipher(int k, string p);
 }
 
-void cipher(int k)
+void cipher(int k, string p)
 {
-    string plaintext = get_string("plaintext:  ");
-    
+    // encipher plaintext using caesar's equation
+    for (int i = 0; i < strlen(p); i++)
+    {
+        
+    }
+    string c =
 }

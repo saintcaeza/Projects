@@ -12,6 +12,7 @@ void cipher(string p);
 
 int main(int argc, string argv[])
 {
+    int k = argv[1];
     if (argc != 2)
     {
         printf("Error: invalid number of command line arguments. Usage: ./caesar key\n.");

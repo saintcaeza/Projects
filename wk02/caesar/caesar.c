@@ -32,4 +32,6 @@ int main(int argc, string argv[])
 }
 
 #pseudocode
-#1. Accept a single command line, a non-negative integer 
+#1. Accept a single command line, a non-negative integer 'k'
+#2. If program is executed without any command-line arguments or with more than one command-line argument,
+# your program should print an error message of your choice (with printf) and return from main a value of 1 immediately.

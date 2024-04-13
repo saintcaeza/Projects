@@ -27,7 +27,7 @@ int main(int argc, string argv[])
         }
     }
 
-    encipher(argv[1]);
+    cipher(argv[1]);
 
 }
 

@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     {
         if (!isdigit(argv[1][i]))
         {
-            printf("Error: invalid key! Input numeric character\n");
+            printf("Usage: ./caesar key\n");
             return 1;
         }
     }

@@ -21,6 +21,12 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    #check if argv[1] is a digit
+    if (isdigit(argv[1]))
+    {
+        int k = argv[1];
+    }
+
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
         if (!isdigit(argv[1][i]))

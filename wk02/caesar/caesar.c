@@ -12,29 +12,21 @@ void cipher(string p);
 
 int main(int argc, char *argv[])
 {
-    int k = argv[1];
-
-    # Accepts a single command line argument
+    # Accept a single command line argument
     if (argc != 2)
     {
-        printf("Error: invalid number of command line arguments. Usage: ./caesar key\n.");
+        printf("Error: invalid number of command-line arguments. Usage: ./caesar key\n.");
         return 1;
     }
 
-    #check if argv[1] is a digit
-    if (isdigit(argv[1]))
+    # command-line argument must be a decimal number
+    if ((!isdigit(argv[1])) || (argv[1] < 0))
     {
-        int k = argv[1];
+        printf("Usage: ./caesar key\n");
+        return 1;
     }
 
-    for (int i = 0; argv[1][i] != '\0'; i++)
-    {
-        if ((!isdigit(argv[1])) || (argv[1] < 0))
-        {
-            printf("Usage: ./caesar key\n");
-            return 1;
-        }
-    }
+    int k = argv[1];
 
     cipher(argv[1]);
 

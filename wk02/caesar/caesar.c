@@ -51,7 +51,14 @@ void cipher(int k, string p)
     {
         if (isalpha(p[i]))
         {
-            c[i] = (p[i] + k) % 26;
+            if (isupper(p[i]))
+            {
+                c[i] = (p[i] + k) % 90;
+            }
+            else if (isower(p[i]))
+            {
+                c[i] = (p[i] + k) % 122;
+            }
         }
         else
         {

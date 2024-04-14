@@ -18,25 +18,19 @@ int main(int argc, char *argv[])
     char *key = argv[1];
 
     // command-line argument must be a decimal number
-    for (int i = 0; key[i] < (strlen(key)); i++)
+    for (int i = 0; i < (strlen(key)); i++)
     {
         if (!isdigit(key[i]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
         }
-        else
-        {
-            int k = atoi(key);
-        }
     }
-
-
-
+    int k = atoi(key);
 
     string plaintext = get_string("plaintext:  ");
 
-    cipher(int k, string p);
+    cipher(k, plaintext);
 
     return 0;
 }

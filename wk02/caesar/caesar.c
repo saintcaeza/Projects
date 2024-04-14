@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void cipher(int k);
+void cipher(int k, string p);
 
 int main(int argc, char *argv[])
 {

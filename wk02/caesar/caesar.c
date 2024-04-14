@@ -27,22 +27,27 @@ int main(int argc, char *argv[])
     string plaintext = get_string("plaintext:  ");
 
     cipher(int k, string p);
+
+    return o;
 }
 
 void cipher(int k, string p)
 {
     int len = strlen(p);
-    
+    string c[(len + 1)];
+
     // convert plaintext to cyphertext
     for (int i = 0; p[i] < (len + 1); i++)
     {
         if (isalpha(p[i]))
         {
-            string c[i] = p[i] + k;
+            c[i] = p[i] + k;
         }
         else
         {
             c[i] = p[i];
         }
     }
+
+    printf("ciphertext:  %s", c)
 }

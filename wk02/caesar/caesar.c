@@ -18,12 +18,19 @@ int main(int argc, char *argv[])
     int k = argv[1] % 25;
 
     // command-line argument must be a decimal number
-    //for (int i = 0; argv[1][i] < (strlen(argv[1]; i++)))
-    if ((!isdigit(k)) || (k < 0))
+    for (int i = 0; argv[1][i] < (strlen(argv[1]; i++)))
     {
-        printf("Usage: ./caesar key\n");
-        return 1;
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+        else
+        {
+            
+        }
     }
+
 
 
 

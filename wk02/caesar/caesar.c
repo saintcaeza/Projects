@@ -45,10 +45,10 @@ int main(int argc, char *argv[])
 void cipher(int k, string p)
 {
     int len = strlen(p);
-    string c[(len + 1)];
+    char c[(len + 1)];
 
     // convert plaintext to cyphertext
-    for (int i = 0; p[i] < (len + 1); i++)
+    for (int i = 0; i < (len + 1); i++)
     {
         if (isalpha(p[i]))
         {

@@ -32,15 +32,20 @@ int main(int argc, char *argv[])
 void cipher(int k, string p)
 {
     int len = strlen(p);
-    string c[len];
+    string c[len + 1] = '\0';;
+
     // convert plaintext to cyphertext
-    for (int i = 0; p[i] < len; i++)
+    for (int i = 0; c[i] = len; i++)
     {
-        if (isalpha(p[i]))
+         for (int j = 0; p[j] = len; j++)
         {
-            string c = p[i] + k;
+            if (isalpha(p[j]))
+            {
+                string c[i] = p[j] + k;
+            }
         }
     }
+
 
 
 

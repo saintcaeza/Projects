@@ -44,20 +44,20 @@ int main(int argc, char *argv[])
 void cipher(int k, string p)
 {
     int len = strlen(p);
-    char c[(len + 1)] = '0';
+    char c[len];
 
     // convert plaintext to cyphertext
-    for (int i = 0; i < (len + 1); i++)
+    for (int i = 0; i < len; i++)
     {
         if (isalpha(p[i]))
         {
-            c[i] = (p[i] + k) % 25;
+            c[i] = (p[i] + k) % 26;
         }
         else
         {
             c[i] = p[i];
         }
     }
-
+    c[len] = '\0';
     printf("ciphertext:  %s", c);
 }

@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
         else
         {
             int k = atoi(key);
-            k = k % 25;
         }
     }
 
@@ -45,14 +44,14 @@ int main(int argc, char *argv[])
 void cipher(int k, string p)
 {
     int len = strlen(p);
-    char c[(len + 1)];
+    char c[(len + 1)] = '0';
 
     // convert plaintext to cyphertext
     for (int i = 0; i < (len + 1); i++)
     {
         if (isalpha(p[i]))
         {
-            c[i] = p[i] + k;
+            c[i] = (p[i] + k) % 25;
         }
         else
         {
@@ -60,5 +59,5 @@ void cipher(int k, string p)
         }
     }
 
-    printf("ciphertext:  %s", c)
+    printf("ciphertext:  %s", c);
 }

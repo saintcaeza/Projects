@@ -15,19 +15,20 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    int k = argv[1] % 25;
+    char *key = argv[1];
 
     // command-line argument must be a decimal number
-    for (int i = 0; argv[1][i] < (strlen(argv[1]; i++)))
+    for (int i = 0; key[i] < (strlen(key)); i++)
     {
-        if (!isdigit(argv[1][i]))
+        if (!isdigit(key[i]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
         }
         else
         {
-            
+            int k = atoi(key);
+            k = k % 25;
         }
     }
 

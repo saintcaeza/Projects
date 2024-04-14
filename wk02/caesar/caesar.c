@@ -15,14 +15,17 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    int k = argv[1] % 25;
+
     // command-line argument must be a decimal number
-    if ((!isdigit(argv[1])) || (argv[1] < 0))
+    //for (int i = 0; argv[1][i] < (strlen(argv[1]; i++)))
+    if ((!isdigit(k)) || (k < 0))
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
 
-    int k = argv[1] % 25;
+
 
     string plaintext = get_string("plaintext:  ");
 

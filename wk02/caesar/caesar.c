@@ -61,4 +61,5 @@ void cipher(int k, string p)
     }
     c[len] = '\0';
     printf("ciphertext:  %s", c);
+    printf("\n");
 }

@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 
     cipher(int k, string p);
 
-    return o;
+    return 0;
 }
 
 void cipher(int k, string p)

@@ -26,8 +26,8 @@ int main (void)
 
 void collatz(int n, int score)
 {
-    score ++
+    do
+    {
 
-
-    return score;
+    } while(n != 1)
 }

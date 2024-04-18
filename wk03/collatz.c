@@ -10,5 +10,5 @@ int main (void)
     int n = get_int("what's the int: \n");
 
     collatz(n, score);
-    printf("T")
+    printf("The number of steps to get to 1 is %d.\n", )
 }

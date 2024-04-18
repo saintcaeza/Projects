@@ -31,5 +31,7 @@ void collatz(int n, int score)
     else if (n % 2 == 1)
     {
         n = 3n + 1;
+        collatz(n, score);
     }
+    return score;
 }

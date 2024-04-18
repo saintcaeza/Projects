@@ -10,19 +10,7 @@ int main (void)
 
     if (n == 1)
         printf("The number of steps to get to 1 is %d.\n", score);
-    else
-        do
-        {
-            collatz(n, score);
-        } while (n != 1);
-
-    printf("The number of steps to get to 1 is %d.\n", score);
-}
-
-void collatz(int n, int score)
-{
-    score ++
-    if (n % 2 == 0)
+    else if (n % 2 == 0)
     {
         n /= 2;
         collatz(n, score);
@@ -32,5 +20,14 @@ void collatz(int n, int score)
         n = 3n + 1;
         collatz(n, score);
     }
+
+    printf("The number of steps to get to 1 is %d.\n", score);
+}
+
+void collatz(int n, int score)
+{
+    score ++
+
+
     return score;
 }

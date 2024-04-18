@@ -22,5 +22,5 @@ int main (void)
 
 void collatz(int n, int score)
 {
-
+    if (n % 2)
 }

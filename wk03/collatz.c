@@ -22,11 +22,14 @@ int main (void)
 
 void collatz(int n, int score)
 {
+    score ++
     if (n % 2 == 0)
     {
-        score++;
         n /= 2;
         collatz(n, score);
     }
-    else (n l)
+    else if (n % 2 == 1)
+    {
+        n = 3n + 1;
+    }
 }

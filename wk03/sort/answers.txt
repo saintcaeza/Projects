@@ -1,0 +1,52 @@
+sort1 uses: TODO
+
+How do you know?: TODO
+
+time ./sort1 sorted50000.txt
+time taken to sort
+random5000.txt =
+random10000.txt = .33s
+random50000.txt = 15.472s
+
+reversed5000.txt =
+reversed10000.txt = 0.232s
+reversed50000.txt = 30.919s
+
+sorted5000.txt =
+sorted10000.txt = .062s
+sorted50000.txt = 1.812s
+
+sort2 uses: TODO
+
+How do you know?: TODO
+
+time ./sort2 random50000.txt
+Time taken to sort
+random5000.txt =
+random10000.txt =  0.047s
+random50000.txt =
+
+reversed5000.txt =
+reversed10000.txt =
+reversed50000.txt =
+
+sorted5000.txt =
+sorted10000.txt =
+sorted50000.txt =
+
+sort3 uses: TODO
+
+How do you know?:
+
+time taken to sort
+random5000.txt =
+random10000.txt = 0.129s
+random50000.txt = 0.735s
+
+reversed5000.txt =
+reversed10000.txt =
+reversed50000.txt =
+
+sorted5000.txt =
+sorted10000.txt =
+sorted50000.txt =

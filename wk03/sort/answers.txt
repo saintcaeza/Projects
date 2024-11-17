@@ -1,6 +1,6 @@
-sort1 uses: TODO
+sort1 uses: Bubble sort
 
-How do you know?: TODO
+How do you know?: It has the sorted case sort time so it has the best omega nota
 
 time ./sort1 sorted50000.txt
 time taken to sort
@@ -34,9 +34,8 @@ sorted5000.txt =
 sorted10000.txt = 0.063
 sorted50000.txt = 7.862
 
-sort3 uses: TODO
-
-How do you know?:
+sort3 uses: Selection sort
+How do you know?: I know because it takes the longest to sort the best case (sorted) so it matches the omega notation an big O notation too
 
 time ./sort3 sorted5000.txt
 time taken to sort

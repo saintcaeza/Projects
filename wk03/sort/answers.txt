@@ -16,9 +16,9 @@ sorted5000.txt =
 sorted10000.txt = .062s
 sorted50000.txt = 1.812s
 
-sort2 uses: TODO
+sort2 uses: Merge sort
 
-How do you know?: TODO
+How do you know?: They share a simmilar(approximate) big 0 and omega notation
 
 time ./sort2 sorted10000.txt
 Time taken to sort

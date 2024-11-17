@@ -20,14 +20,14 @@ sort2 uses: TODO
 
 How do you know?: TODO
 
-time ./sort2 reversed10000.txt
+time ./sort2 sorted10000.txt
 Time taken to sort
 random5000.txt =
 random10000.txt =  0.047s
 random50000.txt = 3.911s
 
 reversed5000.txt =
-reversed10000.txt = 3.911s
+reversed10000.txt = 0.065
 reversed50000.txt = 9.770
 
 sorted5000.txt =

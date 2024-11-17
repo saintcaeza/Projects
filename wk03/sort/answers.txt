@@ -38,7 +38,7 @@ sort3 uses: TODO
 
 How do you know?:
 
-time ./sort2 sorted10000.txt
+time ./sort2 sorted50000.txt
 time taken to sort
 random5000.txt =
 random10000.txt = 0.129s

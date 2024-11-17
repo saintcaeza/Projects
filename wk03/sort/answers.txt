@@ -28,7 +28,7 @@ random50000.txt = 3.911s
 
 reversed5000.txt =
 reversed10000.txt = 3.911s
-reversed50000.txt =
+reversed50000.txt = 3.911s
 
 sorted5000.txt =
 sorted10000.txt =
@@ -37,6 +37,8 @@ sorted50000.txt =
 sort3 uses: TODO
 
 How do you know?:
+
+time ./sort3 reversed50000.txt
 
 time taken to sort
 random5000.txt =

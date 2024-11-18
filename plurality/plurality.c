@@ -66,9 +66,10 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    // Repeat, starting at the first element:
     for (int i = 0; i < voter_count; i++)
     {
+        // Repeat, starting at the first element:
+        for (int j = 0; j < candidate_count; j++)
         // If the first element is what you're looking for (A candidate),
         // Stop and update votes
         if first candidate is the name being voted for

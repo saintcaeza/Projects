@@ -101,7 +101,10 @@ void print_winner(void)
             int temp = candidates[i].votes;
             candidates[i+1].votes = candidates[i].votes;
             candidates[i+1].votes = temp;
+
+            swap_counter++;
         }
+
         print the highetst number of votes
 
         check for the second highest number of votes and print that

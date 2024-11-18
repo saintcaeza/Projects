@@ -114,7 +114,9 @@ void print_winner(void)
         }
     }
 
-    
+    starting from the last candidate in the array
+        print him as winner
+    evaluate moving backwards vote count of the others
 
     return;
 }

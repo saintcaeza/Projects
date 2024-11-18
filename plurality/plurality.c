@@ -91,9 +91,12 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
+
+    int swap_counter = -1;
     for (int i = 0; i < candidate_count; i++)
     {
         sort the votes of each candidate
+        look at each pair of adjacent candidate
         print the highetst number of votes
         check for the second highest number of votes and print that
 

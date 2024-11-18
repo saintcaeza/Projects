@@ -93,7 +93,7 @@ void print_winner(void)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if the votes of the first candidate 
+        sort the votes 
     }
     return;
 }

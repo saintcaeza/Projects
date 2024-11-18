@@ -93,7 +93,9 @@ void print_winner(void)
     // TODO
 
     int swap_counter = -1;
-    for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < swap_counter; i++)
+    {
+        for (int i = 0; i < candidate_count; i++)
     {
         sort the votes of each candidate
         if (candidates[i].votes > candidates[i+1].votes)
@@ -105,4 +107,6 @@ void print_winner(void)
         }
     }
     return;
+    }
+
 }

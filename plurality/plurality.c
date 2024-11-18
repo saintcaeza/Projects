@@ -96,13 +96,13 @@ void print_winner(void)
     for (int i = 0; i < candidate_count; i++)
     {
         swap_counter = 0;
-        for (int i = 0; i < swap_counter; i++)
+        for (int j = 0; j < candidates[j].votes; j++)
         {
-            if (candidates[i].votes > candidates[i+1].votes)
+            if (candidates[j].votes > candidates[j+1].votes)
             {
                 int temp = candidates[i].votes;
-                candidates[i].votes = candidates[i+1].votes;
-                candidates[i+1].votes = temp;
+                candidates[j].votes = candidates[j+1].votes;
+                candidates[j+1].votes = temp;
                 swap_counter++;
             }
         }

@@ -68,7 +68,9 @@ bool vote(string name)
     // TODO
 
     // Sort through the array of candidates
-        // Search for name i
+        // Search for name in array of candidates
+            // If name is not a candidate return false
+            // Else if name is a candidate update vote count
     return false;
 }
 

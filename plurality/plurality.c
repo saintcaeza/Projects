@@ -115,6 +115,10 @@ void print_winner(void)
     }
 
     starting from the last candidate in the array
+    for (i = can; i < candidate_count - 1; i++)
+    {
+
+    }
         print him as winner
     evaluate moving backwards vote count of the others
 

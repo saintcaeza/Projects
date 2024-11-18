@@ -95,6 +95,7 @@ void print_winner(void)
     int swap_counter = -1;
     for (int i = 0; i < candidate_count; i++)
     {
+        swap_counter = 0;
         for (int i = 0; i < swap_counter; i++)
         {
             if (candidates[i].votes > candidates[i+1].votes)

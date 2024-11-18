@@ -66,6 +66,9 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
+
+    // Sort through the array of candidates
+        // Search for name i
     return false;
 }
 

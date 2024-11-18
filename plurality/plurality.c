@@ -96,8 +96,12 @@ void print_winner(void)
     for (int i = 0; i < candidate_count; i++)
     {
         sort the votes of each candidate
-        if (candidates[i].votes )
+        if (candidates[i].votes > candidates[i+1].votes)
+        {
+            
+        }
         print the highetst number of votes
+
         check for the second highest number of votes and print that
 
     }

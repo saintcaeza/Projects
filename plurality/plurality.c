@@ -115,7 +115,7 @@ void print_winner(void)
     }
 
     starting from the last candidate in the array
-    for (i = can; i < candidate_count - 1; i++)
+    for (i = candidate_count - 1; i != candidate_count - 1; i++)
     {
 
     }

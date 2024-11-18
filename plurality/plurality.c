@@ -66,11 +66,19 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
+    // Repeat, starting at the first element:
+    for (int i = 0; i < voter_count; i++)
+    {
+        // If the first element is what you're looking for (A candidate),
+        // Stop and update votes
+        if first candidate is the name being voted for
+            increase votes by 1
+        if (candidate[i].name == name)
+            return true
+        // Otherwise move to the next element
+        else move unto next candidate
+    }
 
-    // Sort through the array of candidates 
-        // Search for name in array of candidates
-            // If name is not a candidate return false
-            // Else if name is a candidate update vote count
     return false;
 }
 

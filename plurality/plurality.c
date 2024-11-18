@@ -72,9 +72,9 @@ bool vote(string name)
     for (int i = 0; i < candidate_count; i++)
     {  // If the first element is what you're looking for (A candidate) update votes and return true
 
-        if (candidate[i].name == name)
+        if (strcomp(candidate[i].name, name))
         {
-            candidate[i].vote++;
+            candidate[i].votes++;
             return true;
         }
         // Otherwise move to the next element
@@ -96,7 +96,7 @@ void print_winner(void)
         sort the votes of each candidate
         print the highetst number of votes
         check for the second highest number of votes and print that
-        
+
     }
     return;
 }

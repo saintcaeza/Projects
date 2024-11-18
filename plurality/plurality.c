@@ -98,7 +98,9 @@ void print_winner(void)
         sort the votes of each candidate
         if (candidates[i].votes > candidates[i+1].votes)
         {
-            int temp = arr[candidates[i].votes]
+            int temp = candidates[i].votes;
+            candidates[i+1].votes = candidates[i].votes
+
         }
         print the highetst number of votes
 

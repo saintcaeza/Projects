@@ -99,8 +99,8 @@ void print_winner(void)
         if (candidates[i].votes > candidates[i+1].votes)
         {
             int temp = candidates[i].votes;
-            candidates[i+1].votes = candidates[i].votes
-
+            candidates[i+1].votes = candidates[i].votes;
+            candidates[i+1].votes = temp;
         }
         print the highetst number of votes
 

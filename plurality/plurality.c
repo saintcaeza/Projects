@@ -93,7 +93,10 @@ void print_winner(void)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        sort the votes 
+        sort the votes of each candidate
+        print the highetst number of votes
+        check for the second highest number of votes and print that
+        
     }
     return;
 }

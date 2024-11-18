@@ -68,21 +68,17 @@ bool vote(string name)
     // TODO
     // Repeat, starting at the first element(candidate):
     for (int i = 0; i < candidate_count; i++)
-    {
-         if first candidate is the name being voted for
-            increase votes by 1
+    {  // If the first element is what you're looking for (A candidate) update votes and return true
         if (candidate[i].name == name)
         {
             candidate[i].vote++;
+            return true;
         }
-            return true
-
-
-        // If the first element is what you're looking for (A candidate),
-        // Stop and update votes
-
         // Otherwise move to the next element
-        else move unto next candidate
+        else
+        {
+            
+        }
     }
 
     return false;

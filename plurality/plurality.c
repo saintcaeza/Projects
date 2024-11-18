@@ -96,7 +96,7 @@ void print_winner(void)
     for (int i = 0; i < candidate_count; i++)
     {
         sort the votes of each candidate
-        look at each pair of adjacent candidate
+        if (candidates[i].votes )
         print the highetst number of votes
         check for the second highest number of votes and print that
 

@@ -87,8 +87,12 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-
+    for (int i = 0; i < candidate_count; i++)
+    {
+        printf("Before sorting: %s has %i votes\n", candidates[i].name, candidates[i].votes);
+    }
     int swap_counter = -1;
+    
     for (int i = 0; i < candidate_count; i++)
     {
         swap_counter = 0;
@@ -108,6 +112,10 @@ void print_winner(void)
         {
             return;
         }
+    }
+    for (int i = 0; i < candidate_count; i++)
+    {
+        printf("After sorting: %s has %i votes\n", candidates[i].name, candidates[i].votes);
     }
 
     for (int i = 0; i < candidate_count; i++)

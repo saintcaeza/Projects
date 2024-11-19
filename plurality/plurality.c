@@ -78,10 +78,6 @@ bool vote(string name)
             return true;
         }
         // Otherwise move to the next element
-        else
-        {
-            return 3;
-        }
     }
 
     return false;
@@ -108,7 +104,7 @@ void print_winner(void)
             }
         }
 
-        if (swap_counter = 0)
+        if (swap_counter == 0)
         {
             return 4;
         }
@@ -116,9 +112,9 @@ void print_winner(void)
 
     for (i = 0; i < candidate_count-1; i++)
     {
-        if (candidate[i].votes == candidate[candidate-count-1])
+        if (candidates[i].votes == candidates[candidate_count-1])
         {
-            printf('%s', candidate[i].name)
+            printf("%s", candidates[i].name)
         }
     }
     return;

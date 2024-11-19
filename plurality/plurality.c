@@ -101,9 +101,9 @@ void print_winner(void)
 
             if (candidates[j].votes > candidates[j+1].votes)
             {
-                int temp = candidates[j].votes;
-                candidates[j].votes = candidates[j+1].votes;
-                candidates[j+1].votes = temp;
+                candidate temp = candidates[j];
+                candidates[j] = candidates[j+1];
+                candidates[j+1] = temp;
                 swap_counter++;
             }
         }

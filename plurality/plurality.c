@@ -72,9 +72,9 @@ bool vote(string name)
     for (int i = 0; i < candidate_count; i++)
     {  // If the first element is what you're looking for (A candidate) update votes and return true
 
-        if (strcmp(candidate[i].name == name))
+        if (strcmp(candidates[i].name == name))
         {
-            candidate[i].votes++;
+            candidates[i].votes++;
             return true;
         }
         // Otherwise move to the next element

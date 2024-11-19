@@ -114,13 +114,12 @@ void print_winner(void)
         }
     }
 
-    starting from the last candidate in the array
-    for (i = candidate_count - 1; i != candidate_count - 1; i++)
+    for (i = 0; i < candidate_count-1; i++)
     {
-
+        if (candidate[i].votes == candidate[candidate-count-1])
+        {
+            printf('%s', candidate[i].name)
+        }
     }
-        print him as winner
-    evaluate moving backwards vote count of the others
-
     return;
 }
